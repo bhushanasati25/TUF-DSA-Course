@@ -10,3 +10,12 @@ print(type(age))
 print(type(price))
 
 print("Hello World!")
+
+
+a, b = 1, 2.0
+sum = a + b
+print("Sum of a and b is", sum)
+print("Sum of a and b is", a + b)
+print("Sum of a and b is", sum)
+
+
