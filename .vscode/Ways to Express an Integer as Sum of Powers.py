@@ -25,3 +25,6 @@ class Solution(object):
             return memo[(remaining, current)]
 
         return dfs(n, 1)
+
+
+Code
