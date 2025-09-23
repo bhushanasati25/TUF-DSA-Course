@@ -19,5 +19,3 @@ class Solution(object):
             elif num1 < num2:
                 return -1
         return 0
-
-### 
