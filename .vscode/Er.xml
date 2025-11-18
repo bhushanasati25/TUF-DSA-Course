@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2025-11-17T00:00:00.000Z" agent="5.0 (draw.io)" etag="W/\"a1b2c3\"" version="20.3.6" type="device">
+  <diagram id="er-diagram" name="ER Diagram">
+    <mxGraphModel dx="1266" dy="786" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- DEPARTMENT -->
+        <mxCell id="dept" value="DEPARTMENT\nPK: DeptCode\nAK: DeptName\nOfficeNumber, OfficePhone, College" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="220" height="120" as="geometry"/>
+        </mxCell>
+
+        <!-- COURSE -->
+        <mxCell id="course" value="COURSE\nPK: CourseNumber\nCourseName, Description, SemesterHours, Level\nFK: DeptCode" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="40" width="260" height="120" as="geometry"/>
+        </mxCell>
+
+        <!-- INSTRUCTOR -->
+        <mxCell id="instructor" value="INSTRUCTOR\nPK: InstructorID\nName, Ssn, Office, Phone\nFK: DeptCode" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="200" width="220" height="120" as="geometry"/>
+        </mxCell>
+
+        <!-- SECTION -->
+        <mxCell id="section" value="SECTION\nPK: CourseNumber, Semester, Year, SectionNumber\nInstructorID (FK)\nMeetingTime, Location" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="200" width="320" height="140" as="geometry"/>
+        </mxCell>
+
+        <!-- STUDENT -->
+        <mxCell id="student" value="STUDENT\nPK: StudentNumber\nAK: Ssn\nFirstName, MiddleInitial, LastName, BirthDate, Sex, Class, DegreeProgram\nCurrentAddress(...), CurrentPhone\nPermanentAddress(...), PermanentPhone\nFK: MajorDeptCode (NOT NULL), MinorDeptCode (nullable)" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="400" width="420" height="220" as="geometry"/>
+        </mxCell>
+
+        <!-- ENROLLED_IN (associative) -->
+        <mxCell id="enrolled" value="ENROLLED_IN (ASSOCIATIVE)\nPK: StudentNumber, CourseNumber, Semester, Year, SectionNumber\nLetterGrade, NumericGrade" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#f8f8f8;" vertex="1" parent="1">
+          <mxGeometry x="520" y="420" width="320" height="120" as="geometry"/>
+        </mxCell>
+
+        <!-- Connectors: DEPARTMENT -> COURSE -->
+        <mxCell id="edge_dept_course" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1;" edge="1" parent="1" source="dept" target="course">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- DEPARTMENT -> STUDENT (Major) -->
+        <mxCell id="edge_dept_student_major" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1;dashed=0;" edge="1" parent="1" source="dept" target="student">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- DEPARTMENT -> STUDENT (Minor) (dashed to indicate optional) -->
+        <mxCell id="edge_dept_student_minor" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1;dashed=1;" edge="1" parent="1" source="dept" target="student">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="180" y="520" as="targetPoint"/></mxGeometry>
+        </mxCell>
+
+        <!-- DEPARTMENT -> INSTRUCTOR -->
+        <mxCell id="edge_dept_instructor" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1;" edge="1" parent="1" source="dept" target="instructor">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- COURSE -> SECTION -->
+        <mxCell id="edge_course_section" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1;" edge="1" parent="1" source="course" target="section">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- INSTRUCTOR -> SECTION (taught_by) -->
+        <mxCell id="edge_instructor_section" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1;" edge="1" parent="1" source="instructor" target="section">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- STUDENT -> ENROLLED_IN -->
+        <mxCell id="edge_student_enrolled" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1;" edge="1" parent="1" source="student" target="enrolled">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- SECTION -> ENROLLED_IN -->
+        <mxCell id="edge_section_enrolled" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=1;" edge="1" parent="1" source="section" target="enrolled">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- small labels for cardinalities -->
+        <mxCell id="label_dept_course" value="1..*" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="260" y="80" width="40" height="20" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="label_dept_student_major" value="1..* (major)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="200" y="300" width="120" height="20" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="label_dept_student_minor" value="0..1 (minor)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="200" y="330" width="120" height="20" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="label_student_section" value="M:N" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="460" y="480" width="60" height="20" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
