@@ -353,6 +353,146 @@ def password(s):
 
 ### Creative and Tricky Logical Scenarios
 
+### Creative and Tricky Logical Scenarios
+
+def pointlies(x, y):
+    if x == 0 and y == 0:
+        return "The point is at the origin."
+    elif y == 0:
+        return "The point lies on the X-axis."
+    elif x == 0:
+        return "The point lies on the Y-axis."
+    else:
+        return "The point is not on any axis."
+
+def pythagoreanTriplet(a, b, c):
+    x, y, z = sorted([a, b, c])
+
+    if (z*z == x*x + y*y):
+        return "These numbers form a Pythagorean triple."
+    else:
+        return "These numbers do NOT form a Pythagorean triple."
+
+def validCalender(day, month):
+    date = {1: 31, 2: 28, 3: 31, 4: 30, 
+            5: 31, 6: 30, 7: 31, 8: 31,
+            9: 30, 10: 31, 11: 30, 12: 31}
+
+    if day < 1 or month > 12:
+        return "Invalid Input"
+    else:
+        if 1 <= day <= date[month]:
+            return "Valid Date"
+        else:
+            return "Invalid date: day does not exist for this month."
+
+def clock_angle(hours, minutes):
+    # Convert hours to 12-hour format
+    if hours >= 12:
+        hours = hours % 12
+
+    # Calculate minute hand angle
+    minute_angle = minutes * 6
+
+    # Calculate hour hand angle
+    hour_angle = hours * 30 + minutes * 0.5
+
+    # Find the difference
+    angle = abs(hour_angle - minute_angle)
+
+    # Use if–else to choose the smaller angle
+    if angle > 180:
+        smaller_angle = 360 - angle
+    else:
+        smaller_angle = angle
+
+    return smaller_angle
+
+def arithmetic(a, b, c):
+    if (a - b) == (b - c):
+        return "Yes it's Arithmetic Progression"
+    else:
+        return "It's not Arithmetic Progression"
+
+def geomatricProgression(a, b, c):
+    if a == 0 and b == 0:
+        return 
+    
+    if b * b == a * c:
+        return "Yes it's Geomatric Progression"
+    else:
+        return "No it's not Geomatric Progression"
+
+def sumoffirstandlastdigit(num):
+    a = num // 100        # first digit
+    b = (num // 10) % 10  # middle digit
+    c = num % 10          # last digit
+
+    if (a + c) == b:
+        return "Equal to Middle Digit"
+    else:
+        return "No it's not equal to middle digit"
+
+def check_sum_vs_product(n):
+    sum_digits = 0
+    prod_digits = 1
+
+    temp = n
+    while temp > 0:
+        digit = temp % 10
+        sum_digits += digit
+        prod_digits *= digit
+        temp //= 10
+
+    print("Sum of digits =", sum_digits)
+    print("Product of digits =", prod_digits)
+
+    if sum_digits > prod_digits:
+        print("YES — Sum of digits is greater than the product of digits.")
+    else:
+        print("NO — Sum of digits is NOT greater than the product of digits.")
+
+def earlier_date(d1, m1, d2, m2):
+    if m1 < m2:
+        print("First date comes earlier.")
+    elif m1 > m2:
+        print("Second date comes earlier.")
+    else:  # months equal
+        if d1 < d2:
+            print("First date comes earlier.")
+        elif d1 > d2:
+            print("Second date comes earlier.")
+        else:
+            print("Both dates are the same.")
+
+def print_century(year):
+    century = (year + 99) // 100
+
+    # Determine suffix
+    if 10 < century % 100 < 14:  # 11, 12, 13
+        suffix = "th"
+    else:
+        last_digit = century % 10
+        if last_digit == 1:
+            suffix = "st"
+        elif last_digit == 2:
+            suffix = "nd"
+        elif last_digit == 3:
+            suffix = "rd"
+        else:
+            suffix = "th"
+
+    print(f"{century}{suffix} century")
+
+
+
+if __name__ == "__main__":
+    n1 = int(input().strip())
+    #n2 = int(input().strip())
+    #n3 = int(input().strip())
+    #n2 = input().strip()
+    print(sumoffirstandlastdigit(n1))
+
 if __name__ == "__main__":
     #n1 = int(input().strip())
     #n2 = int(input().strip())
