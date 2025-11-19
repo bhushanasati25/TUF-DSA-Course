@@ -484,7 +484,544 @@ def print_century(year):
 
     print(f"{century}{suffix} century")
 
+### Creative and Tricky Logical Scenarios
 
+def pointlies(x, y):
+    if x == 0 and y == 0:
+        return "The point is at the origin."
+    elif y == 0:
+        return "The point lies on the X-axis."
+    elif x == 0:
+        return "The point lies on the Y-axis."
+    else:
+        return "The point is not on any axis."
+
+def pythagoreanTriplet(a, b, c):
+    x, y, z = sorted([a, b, c])
+
+    if (z*z == x*x + y*y):
+        return "These numbers form a Pythagorean triple."
+    else:
+        return "These numbers do NOT form a Pythagorean triple."
+
+def validCalender(day, month):
+    date = {1: 31, 2: 28, 3: 31, 4: 30, 
+            5: 31, 6: 30, 7: 31, 8: 31,
+            9: 30, 10: 31, 11: 30, 12: 31}
+
+    if day < 1 or month > 12:
+        return "Invalid Input"
+    else:
+        if 1 <= day <= date[month]:
+            return "Valid Date"
+        else:
+            return "Invalid date: day does not exist for this month."
+
+def clock_angle(hours, minutes):
+    # Convert hours to 12-hour format
+    if hours >= 12:
+        hours = hours % 12
+
+    # Calculate minute hand angle
+    minute_angle = minutes * 6
+
+    # Calculate hour hand angle
+    hour_angle = hours * 30 + minutes * 0.5
+
+    # Find the difference
+    angle = abs(hour_angle - minute_angle)
+
+    # Use if–else to choose the smaller angle
+    if angle > 180:
+        smaller_angle = 360 - angle
+    else:
+        smaller_angle = angle
+
+    return smaller_angle
+
+def arithmetic(a, b, c):
+    if (a - b) == (b - c):
+        return "Yes it's Arithmetic Progression"
+    else:
+        return "It's not Arithmetic Progression"
+
+def geomatricProgression(a, b, c):
+    if a == 0 and b == 0:
+        return 
+    
+    if b * b == a * c:
+        return "Yes it's Geomatric Progression"
+    else:
+        return "No it's not Geomatric Progression"
+
+def sumoffirstandlastdigit(num):
+    a = num // 100        # first digit
+    b = (num // 10) % 10  # middle digit
+    c = num % 10          # last digit
+
+    if (a + c) == b:
+        return "Equal to Middle Digit"
+    else:
+        return "No it's not equal to middle digit"
+
+def check_sum_vs_product(n):
+    sum_digits = 0
+    prod_digits = 1
+
+    temp = n
+    while temp > 0:
+        digit = temp % 10
+        sum_digits += digit
+        prod_digits *= digit
+        temp //= 10
+
+    print("Sum of digits =", sum_digits)
+    print("Product of digits =", prod_digits)
+
+    if sum_digits > prod_digits:
+        print("YES — Sum of digits is greater than the product of digits.")
+    else:
+        print("NO — Sum of digits is NOT greater than the product of digits.")
+
+def earlier_date(d1, m1, d2, m2):
+    if m1 < m2:
+        print("First date comes earlier.")
+    elif m1 > m2:
+        print("Second date comes earlier.")
+    else:  # months equal
+        if d1 < d2:
+            print("First date comes earlier.")
+        elif d1 > d2:
+            print("Second date comes earlier.")
+        else:
+            print("Both dates are the same.")
+
+def print_century(year):
+    century = (year + 99) // 100
+
+    # Determine suffix
+    if 10 < century % 100 < 14:  # 11, 12, 13
+        suffix = "th"
+    else:
+        last_digit = century % 10
+        if last_digit == 1:
+            suffix = "st"
+        elif last_digit == 2:
+            suffix = "nd"
+        elif last_digit == 3:
+            suffix = "rd"
+        else:
+            suffix = "th"
+
+    print(f"{century}{suffix} century")
+
+
+## Looping & Patterns (Iteration & Flow)
+
+def Printnumber1to10(n):
+    for i in range(1, n):
+        print(i)
+
+def evennumber(n):
+    for i in range(1, n):
+        if i % 2 == 0:
+            print(i)
+
+def oddNumber(n):
+    for i in range(n):
+        if i % 2 != 0:
+            print(i)
+
+def downnumber(n):
+    for i in range(n, 0, -1):
+        print(i)
+
+def table(n):
+    for i in range(1, 11):
+        print(i * n)
+
+'''
+def naturalnumber(n):
+    total = 0
+    for i in range(1, n + 1):
+        total += i
+    return total
+'''
+def naturalnumber(n):
+    total = n * (n + 1) // 2
+    return total
+
+def sumofallevennumber(n):
+    count = 0
+    for i in range(1, n + 1):
+        if i % 2 == 0:
+            count += i
+    return count
+
+def sumofalloddnumber(n):
+    count = 0
+    for i in range(1, n + 1):
+        if i % 2 != 0:
+            count += i
+    return count
+
+def factorial(n):
+    fact = 1
+    for i in range(1, n + 1):
+        fact *= i
+    return fact
+
+def productofgivendigit(n):
+    product = 1
+    while (n > 0):
+        digit = n % 10
+        product *= digit
+        n //= 10
+    return product
+
+def primenum(n):
+    if n <= 1:
+        return False
+
+    for i in range(2, n + 1):
+        if n % 2 == 0:
+            return "it's not prime number"
+        else:
+            return "Yes It's is a Prime Number"
+
+### Number Based Looping Logic
+
+def countnumberofdigit(n):
+
+    if n == 0:
+        return 1
+
+    count = 0
+    while n > 0:
+        digit = n % 10
+        count += 1
+        n //= 10
+    
+    return count
+
+def reversenumber(n):
+    rev = 0
+    while n > 0:
+        lastdigit = n % 10
+        n = n // 10
+        rev = (rev * 10) + lastdigit
+    return rev 
+    
+def palindromenumber(n):
+    original = n
+    rev = 0 
+    while n > 0:
+        lastdigit = n % 10
+        n //= 10
+        rev = (rev * 10) + lastdigit
+    return rev == original
+
+def sumofdigit(n):
+    sumadd = 0
+    while n > 0:
+        digit = n % 10
+        n //= 10
+        sumadd += digit
+
+    return sumadd
+
+def armstrongnumber(n):
+    origin = n
+    smdadd = 0 
+    digits = len(str(n))
+    while n > 0:
+        digit = n % 10
+        n //= 10
+        smdadd += digit ** digits
+
+    return smdadd == origin
+
+def perfectnumber(n):
+
+    if n <= 0:
+        return False
+    
+    ori = n
+    sumofdivisior = 0
+
+    for i in range(1, n):
+        if n % i == 0:
+            sumofdivisior += i
+
+    return sumofdivisior == n
+
+def primeNum(n):
+    for num in range(2, n + 1):
+        isprime = True
+        for i in range(2, num):
+            if(num % i == 0):
+                isprime = False
+                break
+    
+        if isprime:
+            print(num)
+
+def prime(n):
+    for i in range(2, n):
+        if(n % i == 0):
+            return "It is not Prime Number"
+    return "It is Prime Number"
+
+def fibonacci(n):
+    a, b = 0, 1
+    for i in range(n):
+        print(a)
+        a, b = b, a + b
+
+def fibonacci(n):
+    a, b = 0, 1
+    count = 0
+
+    while count < n:
+        print(a)
+        a, b = b, a + b
+        count += 1
+
+def sum_fibonacci(n):
+    a, b = 0, 1
+    total = 0
+
+    for _ in range(n):
+        total += a      # add current Fibonacci number
+        a, b = b, a + b # generate next number
+
+    return total
+
+### Mathematical & Logical Patterns
+
+def squarenumber(n):
+    for i in range(1, n + 1):
+        print(i * i)
+
+def cube(n):
+    for i in range(1, n + 1):
+        print(i * i * i)
+
+def printallnumberaandb(a, b):
+    for i in range(a, b + 1):
+        if i % 7 == 0:
+            print(i)
+
+def gcd(n1, n2):
+    ans = []
+
+    for i in range(1, min(n1,n2) + 1):
+        if n1 % i == 0 and n2 % i == 0:
+            ans.append(i)
+
+    return ans[-1]
+
+def gcd(a, b):
+    while b != 0:
+        a, b = b, a % b
+    return a
+
+    def LCM(n1, n2):
+        return (n1 * n2) // gcd(n1, n2)
+
+def factor(n1):
+    for i in range(1, n1 + 1):
+        if n1 % i == 0:
+            print(i)
+
+'''
+def factorial(n):
+    fact = 1
+    for i in range(1, n + 1):
+        fact *= i
+    return fact
+
+    def is_strong(n):
+    original = n          # store original number
+    total = 0             # to store sum of factorials
+
+    while n > 0:
+        digit = n % 10                   # extract last digit
+        total += factorial(digit)        # add factorial of digit
+        n //= 10                         # remove last digit
+
+    return total == original
+'''
+
+def print_AP(a, d, n):
+    term = a
+    for i in range(n):
+        print(term)
+        term += d
+
+def print_GP(a, r, n):
+    term = a
+    for i in range(n):
+        print(term)
+        term *= d
+
+
+
+
+
+def starprinting():
+    print("*")
+    print("****")
+
+def printnstar(n):
+    for i in range(n):
+        print("*", end = " ")
+
+def printsquareofstar(n):
+    for i in range(n):
+        for j in range(n):
+            print("*", end = "")
+        print()
+
+def printanincreasingTriangleofstar(n):
+    for i in range(n):
+        for j in range(i):
+            print("*" , end ="")
+        print()
+
+def rightAlignedTriangleofstar(n):
+    for i in range(n):
+        for j in range(n - i - 1):
+            print(" ", end="")
+        for k in range(i):
+            print("*" ,end = "")
+        print()
+
+def printStarsinEvenNumber(n):
+    for i in range(n + 1):
+        for j in range(2 * i):
+            print("*", end ="")
+        print()
+
+def starinOddNumber(n):
+    for i in range(n):
+        for j in range(2 * i + 1):
+            print("*", end="")
+        print()
+
+def printCenteredpyramidofstar(n):
+    for i in range(n):
+        for j in range(n - i - 1):
+            print(" ", end="")
+        for j in range(2 * i + 1):
+            print("*", end="")
+        print()
+
+def printstarandspaces(n):
+    for i in range(n):
+        for j in range(n - i - 1):
+            print("b", end ="")
+        for j in range(i):
+            if(j % 2 == 0):
+                print("*", end ="")
+            else:
+                print("b", end ="")
+        print()
+
+def printnumberinanincresingsequences(n):
+    for i in range(n):
+        for j in range(1, i + 1):
+            print(j, end = "")
+        print()
+
+def printrepeatednumberperrow(n):
+    for i in range(n):
+        for j in range(1, i + 1):
+            print(i, end ="")
+        print()
+
+def pattern1(n):
+    num = 1
+    for i in range(1, n):
+        for j in range(1, i + 1):
+            print(str(num) + " ", end= "")
+            num += 1
+        
+        print()
+
+def pattern2(n):
+    num = 1
+    for i in range(1, n):
+        for j in range(1, i + 1):
+            print(str((num % 10)) + " ", end = "")
+            num += 1
+        print()
+
+def pattern3(n):
+    for i in range(1, n):
+        for j in range(1, i + 1):
+            val = (i + j) % 2
+            print(str(val) + " ", end="")
+        print()
+
+def pattern4(rows):
+    for i in range(1, rows + 1):
+        # odd row → start with 1, even row → start with 0
+        val = 1 if i % 2 != 0 else 0
+        for j in range(1, i + 1):
+            print(val, end=" ")
+            val = 1 - val  # flip between 1 and 0
+        print()
+
+def pattern5(n):
+    ch = 'A'
+    for i in range(1,n + 1):
+        for j in range(1, i + 1):
+            print(ch, end=" ")
+            ch = chr(ord(ch) + 1)
+        print()
+
+def pattern6(n):
+    for i in range(n):
+        ch = chr(ord("A") + i)   
+        for j in range(i + 1):
+            print(ch, end=" ")  
+        print()
+
+def pattern7(n):
+    for i in range(n):
+        for j in range(i):
+            ch = chr(ord("A") + j)
+            print(ch, end = " ")
+        print()
+
+def pattern8(n):
+    ch = 'A'
+    for i in range(1, n + 1):
+        for j in range(i, n):
+            print(" ", end = "")
+        
+        for j in range(2 * i - 1):
+            print(ch, end = " ")
+            ch = chr(ord(ch) + 1)
+        print()
+
+
+
+if __name__ == "__main__":
+    n1 = int(input().strip())
+   # n2 = int(input().strip())
+  #  n3 = int(input().strip())
+    #n2 = input().strip()
+    print(pattern8(n1))
+
+
+if __name__ == "__main__":
+    n1 = int(input().strip())
+    n2 = int(input().strip())
+    n3 = int(input().strip())
+    #n2 = input().strip()
+    print(print_GP(n1, n2, n3))
 
 if __name__ == "__main__":
     n1 = int(input().strip())
