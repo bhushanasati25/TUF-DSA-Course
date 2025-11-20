@@ -1036,3 +1036,7 @@ if __name__ == "__main__":
     #n3 = int(input().strip())
     n2 = input().strip()
     print(password(n2))
+
+
+
+
