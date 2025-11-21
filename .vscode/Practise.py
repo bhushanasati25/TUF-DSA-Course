@@ -1006,29 +1006,163 @@ def pattern8(n):
             ch = chr(ord(ch) + 1)
         print()
 
+def pattern9(n):
+    for i in range(1, n + 1):
+        for j in range(1, i + 1):
+            print(j, end = "")
+        print()
 
 
-if __name__ == "__main__":
-    n1 = int(input().strip())
-   # n2 = int(input().strip())
-  #  n3 = int(input().strip())
-    #n2 = input().strip()
-    print(pattern8(n1))
+def pattern10(n):
+    for i in range(1, n + 1):
+        for j in range(i, n):
+            print(" ", end="")
+        
+        for j in range(1, i + 1):
+            print(j, end = "")
+        
+        for j in range(i - 1, 0, -1):
+            print(j, end ="")
+        print()
+
+def pattern11(n):
+    for i in range(1, n + 1):
+        for j in range(1, i + 1):
+            print("*", end="")
+        print()
+
+    for i in range(n - 1, 0, -1):
+        for j in range(1, i + 1):
+            print("*", end = "")
+        print()
 
 
-if __name__ == "__main__":
-    n1 = int(input().strip())
-    n2 = int(input().strip())
-    n3 = int(input().strip())
-    #n2 = input().strip()
-    print(print_GP(n1, n2, n3))
 
-if __name__ == "__main__":
-    n1 = int(input().strip())
-    #n2 = int(input().strip())
-    #n3 = int(input().strip())
-    #n2 = input().strip()
-    print(sumoffirstandlastdigit(n1))
+## Logical Loop Combination
+
+def printallnumber(n):
+    sumofdigit = []
+
+    for i in range(1, n + 1):
+        digit_sum = sum(int(d) for d in str(i))
+        if digit_sum % 2 == 0:
+            sumofdigit.append(i)
+    
+    return sumofdigit
+
+
+def countnumber(n):
+    res = []
+
+    for i in range(1, n + 1):
+        if i % 7 == 0 and i % 5 != 0:
+            res.append(i)
+    
+    return res
+
+
+def printallthepalindromenumber(n):
+    res = []
+
+    for i in range(1, n + 1):
+        original = i
+        rev = 0
+        temp = i
+        while temp > 0:
+            lastdigit = temp % 10
+            temp //= 10
+            rev = (rev * 10) + lastdigit
+        
+        if rev == original:
+            res.append(i)
+
+    return res
+
+def multipleof3(n):
+    res = []
+
+    for i in range(1, n + 1):
+        temp = i
+        sumofc = 0
+        while temp > 0:
+            digit = temp % 10
+            sumofc += digit
+            temp //= 10
+        
+        if sumofc % 3 == 0:
+            res.append(i)
+
+    return res
+
+
+def smallestandlargestdigit(n):
+    smallest = 9
+    lar = 0
+    while n > 0:
+        digit = n % 10
+        n //= 10
+
+        if digit < smallest:
+            smallest = digit
+        
+        if digit > lar:
+            lar = digit
+
+    return smallest, lar
+
+
+def even_binary_ones(n):
+    res = []
+    for i in range(1, n + 1):
+        binary = bin(i)[2:]       # convert to binary string
+        ones = binary.count('1')  # count 1s
+        if ones % 2 == 0:
+            res.append(i)
+    return res  
+
+def patternrow(n):
+    for i in range(1, n + 1):
+        for j in range(i):
+            print(i * i, end= " ")
+        print()
+
+            
+def squared_grid_pattern(n):
+    for i in range(1, n + 1):
+        for j in range(n):
+            print(i * i, end=" ")
+        print()
+
+
+def sum_odd_even_digits(n):
+    odd_sum = 0
+    even_sum = 0
+
+    while n > 0:
+        digit = n % 10
+        n //= 10
+
+        if digit % 2 == 0:
+            even_sum += digit
+        else:
+            odd_sum += digit
+
+    return odd_sum, even_sum
+
+def number(n):
+    sumofnozero = 0
+
+    while n > 0:
+        digit = n % 10
+        n //= 10
+
+        if digit != 0:
+            sumofnozero += digit
+        elif digit == 0:
+            continue
+    return sumofnozero
+
+
 
 if __name__ == "__main__":
     #n1 = int(input().strip())
