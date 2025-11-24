@@ -1311,6 +1311,313 @@ def nCr(n, r):
     # Pascal's recursive relation
     return nCr(n - 1, r - 1) + nCr(n - 1, r)
 
+## Recursion (Thinking in Self - Reference)
+
+def onetoNusingRecursion(i, n):
+    if i > n:
+        return 0
+    print(i, end = " ")
+    print()
+    onetoNusingRecursion(i + 1, n)
+
+def nToDown(n):
+    if n == 0:
+        return 0
+    
+    print(n)
+    nToDown(n - 1)
+    
+def oneToNEvenNumber(n):
+    if n == 0:
+        return 0 
+
+    oneToNEvenNumber(n - 1)
+    if n % 2 == 0:
+        print(n)
+
+def oneTonOddNumber(n):
+    if n == 0:
+        return 0
+
+    oneTonOddNumber(n - 1)
+    if n % 2 != 0:
+        print(n)
+
+def sumofNnaturalNumber(n):
+    if n == 0:
+        return 0 
+    return n + sumofNnaturalNumber(n - 1)
+
+def factorialnumber(n):
+    if n == 0:
+        return 1 
+    
+    return n * factorialnumber(n - 1)
+
+def power(x, n):
+    if n == 0:
+        return 1
+
+    return x * power(x, n - 1)
+
+def fibonacci(n):
+    if n == 0:
+        return 0
+    if n == 1:
+        return 1
+    
+    return fibonacci(n - 1) + fibonacci(n - 2)
+
+def print_fibonacci_series(n, current=0):
+    if current == n:
+        return
+    
+    print(fibonacci(current))
+    print_fibonacci_series(n, current + 1)
+
+def sumofdigit(n):
+    if n == 0 :
+        return 0
+    return (n % 10) + sumofdigit(n // 10)
+
+## Number-Based Recursive Thinking
+
+def CountNumberofDigit(n):
+    n = abs(n)
+    if n < 10:
+        return 1
+    return 1 + CountNumberofDigit(n // 10)
+
+def reverse_number(n):
+    n = str(n)
+    if len(n) == 1:
+        return n
+    return reverse_number(n[1:]) + n[0]
+
+def palindrome_number(n):
+    n = str(n)
+    if len(n) == 1:
+        return n
+    return reverse_number(n[1:]) + n[0] == n 
+
+def productofdigit(n):
+    n = abs(n)
+    if n < 10:
+        return n 
+
+    return (n % 10) * productofdigit(n // 10)
+    
+def gcd(a, b):
+    # Base case: when b becomes 0, a is the GCD
+    if b == 0:
+        return a
+    # Recursive step: gcd(b, a % b)
+    return gcd(b, a % b)
+
+def to_binary(n):
+    if n == 0:
+        return "0"
+    if n == 1:
+        return "1"
+
+    return to_binary(n // 2) + str(n % 2)
+
+def print_in_words(n):
+    words = ["zero", "one", "two", "three", "four",
+             "five", "six", "seven", "eight", "nine"]
+
+    # Handle negative numbers
+    if n < 0:
+        return "minus " + print_in_words(-n)
+
+    # Base case: single digit
+    if n < 10:
+        return words[n]
+
+    # Recursive case: process all digits except last, then last
+    return print_in_words(n // 10) + " " + words[n % 10]
+
+def sum_even(n):
+    # Base case
+    if n == 1:
+        return 2   # first even number is 2
+    
+    # Recursive case
+    return 2 * n + sum_even(n - 1)
+
+def sum_odd(n):
+    # Base case: the first odd number is 1
+    if n == 1:
+        return 1
+    
+    # Recursive case: nth odd number + sum of previous odd numbers
+    return (2 * n - 1) + sum_odd(n - 1)
+
+def nCr(n, r):
+    # Base cases
+    if r == 0 or r == n:
+        return 1
+    # Pascal's recursive relation
+    return nCr(n - 1, r - 1) + nCr(n - 1, r)
+
+## Pattern & Printing Problems
+
+def printstar(n):
+    if n == 0:
+        return 
+    print("*", end = "")
+    printstar(n - 1)
+
+def squareofstar(n, current=None):
+    if current is None:
+        current = n   # initialize
+    
+    if current == 0:
+        return
+
+    printstar(n)
+    print()
+    squareofstar(n, current - 1)
+
+def triangle(n):
+    if n == 0:
+        return
+    printstar(n)   # print the row of n stars
+    print()          # new line
+    triangle(n - 1)  # recursive call for next smaller row
+
+def triangleBottomup(n):
+    if n == 0:
+        return
+    
+    triangleBottomup(n - 1)
+    printstar(n)
+    print()
+
+def print_numbers(k):
+    if k == 0:
+        return
+    print_numbers(k - 1)
+    print(k, end="")
+
+def print_pattern(n):
+    if n == 0:
+        return
+    print_pattern(n - 1)
+    print_numbers(n)
+    print()
+
+def table(n, i=1):
+    if i > 10:         # stop at 10
+        return
+    print(f"{n} x {i} = {n * i}")
+    table(n, i + 1)    # move to next number
+
+def inc_dec(n, current=1):
+    if current > n:
+        return
+    # Print increasing order
+    print(current, end=" ")
+    inc_dec(n, current + 1)
+    # Print decreasing order
+    print(current, end=" ")
+
+def sum_series(n):
+    if n <= 0:
+        return 0
+    if n == 1:
+        print("sum(1) = 1")
+        return 1
+
+    prev_sum = sum_series(n - 1)
+    total = prev_sum + n
+    # print the formation step for current n
+    print(f"sum({n}) = sum({n-1}) + {n} = {prev_sum} + {n} = {total}")
+    return total
+
+
+import string
+
+def char_pattern(n):
+    if n <= 0:
+        return
+    # first print smaller pattern
+    char_pattern(n - 1)
+
+    # build line with first n letters (A, B, C, ...)
+    alphabet = string.ascii_uppercase
+    # if you want to cap at 26: use min(n, 26)
+    line = "".join(alphabet[i % 26] for i in range(n))  # wrap-around if >26
+    print(line)
+
+
+## String Based Recursion 
+
+def reverse(s):
+    if len(s) == 0:
+        return ""
+    return reverse(s[1:]) + s[0]
+
+def is_palindrome(s):
+    if len(s) <= 1:
+        return True
+    if s[0] != s[-1]:
+        return False
+    return is_palindrome(s[1:-1])
+
+def count_vowels(s):
+    if len(s) == 0:
+        return 0
+    return (1 if s[0].lower() in "aeiou" else 0) + count_vowels(s[1:])
+
+def remove_spaces(s):
+    if len(s) == 0:
+        return ""
+    first = "" if s[0] == " " else s[0]
+    return first + remove_spaces(s[1:])
+
+def replace_char(s, old, new):
+    if len(s) == 0:
+        return ""
+    first = new if s[0] == old else s[0]
+    return first + replace_char(s[1:], old, new)
+
+def remove_char(s, ch):
+    if len(s) == 0:
+        return ""
+    first = "" if s[0] == ch else s[0]
+    return first + remove_char(s[1:], ch)
+
+def print_chars(s, i=0):
+    if i == len(s):
+        return
+    print(s[i])
+    print_chars(s, i + 1)
+
+def print_rev(s, i=0):
+    if i == len(s):
+        return
+    print_rev(s, i + 1)
+    print(s[i])
+
+def to_upper(s):
+    if len(s) == 0:
+        return ""
+    return s[0].upper() + to_upper(s[1:])
+
+def count_cv(s, i=0):
+    if i == len(s):
+        return (0, 0)
+
+    vowels = "aeiou"
+    v, c = count_cv(s, i + 1)
+
+    if s[i].lower() in vowels:
+        return (v + 1, c)
+    elif s[i].isalpha():
+        return (v, c + 1)
+    else:
+        return (v, c)
 
 
 
@@ -1318,8 +1625,10 @@ if __name__ == "__main__":
     #n1 = int(input().strip())
     #n2 = int(input().strip())
     #n3 = int(input().strip())
-    n2 = input().strip()
-    print(password(n2))
+    #n2 = input().strip()
+    print(count_cv("Bhushan"))
+
+
 
 
 
