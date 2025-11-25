@@ -1618,6 +1618,140 @@ def count_cv(s, i=0):
         return (v, c + 1)
     else:
         return (v, c)
+    
+
+## String (Basic Logic Building)
+
+def strinputlen(n):
+    count = 0 
+    for i in n:
+        count += 1
+    return count
+
+''' # there is two options
+def stringinplen(s):
+    strlen = len(s)
+    return strlen 
+'''
+
+def firstandlast(s):
+
+    first = s[0]
+    last = s[-1]
+
+    return first, last
+
+def convstringtoUppercase(s):
+    if s == "":
+        return
+    uppercase = s.upper()
+    return uppercase
+
+''' there is 2 options
+def convstringtoUppercase(s):
+    result = ""
+
+    for ch in s:
+        if 'a' <= ch <= 'z':  
+            result += chr(ord(ch) - 32)  
+        else:
+            result += ch
+'''
+
+def lowercase(s):
+    if s == "":
+        return ""
+    lowec = s.lower()
+    return lowec
+'''
+def lowercase(s):
+    if s == "":
+        return ""
+
+    result = ""
+    for ch in s:
+        if "A" <= ch <= "Z":
+            result += chr(ord(ch)+ 32)
+        else:
+            result += ch 
+    return result
+'''
+
+def countchaar(s):
+    if s == "":
+        return 0
+    count = 0
+
+    for ch in s:
+        if ch != " ":
+            count += 1
+    
+    return count
+
+def wordinsentence(s):
+    if s == len(s):
+        return 1
+    
+    count = 0
+    isword = False
+
+    for ch in s:
+        if ch != " " and not isword:
+            count += 1
+            isword = True
+        elif ch == " ":
+            isword = False
+    
+    return count
+
+def concat(s1, s2):
+    result = s1 + s2
+
+    return result
+
+def twostring(s1, s2):
+
+    if s1 == s2:
+        return True
+
+def comparetwostr(s1, s2):
+    if s1 < s2:
+        print("s1 comes first")
+    elif s1 > s2:
+        print("s2 comes first")
+    else:
+        print("both are equal")
+
+def asccichar(s):
+    if s == "":
+        return 0
+
+    res = []
+    for ch in s:
+        res.append(ord(ch))
+    return res
+
+def whetherstringisempty(s):
+    strlen = len(s)
+
+    for i in s:
+        if s != strlen:
+            return True
+    
+    return False
+
+
+
+if __name__ == "__main__":
+    #n1 = int(input().strip())
+    #n2 = int(input().strip())
+    n3 = input().strip()
+    #n2 = input().strip()
+    print(whetherstringisempty(n3))
+
+
+
+
 
 
 
