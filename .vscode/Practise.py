@@ -1741,6 +1741,130 @@ def whetherstringisempty(s):
     return False
 
 
+# Counting & Character Analysis
+
+def countvowelsandconsonants(s):
+    countVowel = 0
+    countConsonent = 0
+
+    vol = 'aeiou'
+    for i in s:
+        if i.isalpha():
+            if i in vol:
+                countVowel += 1
+            else:
+                countConsonent += 1
+    
+    return countVowel, countConsonent
+
+def counthenumberofdigit(s):
+    countdigit = 0
+    countletter = 0
+    countspecialChar = 0
+
+    for ch in s:
+        if ch.isdigit():
+            countdigit += 1
+        elif ch.isalpha():
+            countletter += 1
+        elif not ch.isalnum() and not ch.isspace():
+            countspecialChar += 1
+    
+    return countdigit, 
+
+
+def countUpperCaseAndLowerCase(s):
+    countuprcase = 0
+    countlowercase = 0
+
+    for ch in s:
+        if ch.isupper():
+            countuprcase += 1
+        elif ch.islower():
+            countlowercase += 1
+
+    return countuprcase, countlowercase
+
+
+def freqWithoutMap(s):
+    freq = [0] * 256   # Array for ASCII chars
+
+    for ch in s:
+        freq[ord(ch)] += 1
+
+    # Print only characters that appear
+    for i in range(256):
+        if freq[i] > 0:
+            print(chr(i), ":", freq[i])
+
+def countspaces(s):
+    cntspaces = 0
+
+    for ch in s:
+        if ch == " ":
+            cntspaces += 1
+    return cntspaces
+
+def countGivenChar(s, char):
+    givnchar = 0
+
+    for ch in s:
+        if ch == char:
+            givnchar += 1
+    
+    return givnchar
+
+def alphabet(s):
+    beforM = 0
+    afterM = 0
+
+    for ch in s.lower():
+        if 'a' <= ch <= "m":
+            beforM += 1
+        elif "m" < ch <= "z":
+            afterM += 1
+
+    return beforM, afterM
+
+def count_substrings_bruteforce(s):
+    n = len(s)
+    cnt = 0
+    for i in range(n):
+        for j in range(i, n):
+            if s[i] == s[j]:
+                cnt += 1
+    return cnt
+
+
+def countWordsStartWithVowel(s):
+    vowels = "aeiouAEIOU"
+    words = s.split()     # split sentence into words
+    count = 0
+
+    for w in words:
+        if w[0] in vowels:    # check first letter of each word
+            count += 1
+
+    return count
+
+def countWordsEndWithS(s):
+    words = s.split()   # split the sentence into words
+    count = 0
+
+    for w in words:
+        if w[-1].lower() == 's':   # check last character
+            count += 1
+
+    return count
+
+
+
+
+
+
+
+
+
 
 if __name__ == "__main__":
     #n1 = int(input().strip())
@@ -1752,15 +1876,6 @@ if __name__ == "__main__":
 
 
 
-
-
-
-if __name__ == "__main__":
-    #n1 = int(input().strip())
-    #n2 = int(input().strip())
-    #n3 = int(input().strip())
-    #n2 = input().strip()
-    print(count_cv("Bhushan"))
 
 
 
