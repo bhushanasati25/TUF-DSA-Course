@@ -1859,6 +1859,102 @@ def countWordsEndWithS(s):
 
 
 
+# Reversing & Palindromic Thinking
+
+def revString(s):
+    return s[::-1]
+
+def reverse_each_word(sentence):
+    words = sentence.split()
+    result = []
+
+    for w in words:
+        rev = ""
+        for ch in w:
+            rev = ch + rev
+        result.append(rev)
+
+    return " ".join(result)
+
+
+def reverse_sentence(sentence):
+    words = sentence.split()
+    return " ".join(words[::-1])
+
+def palindromeString(s):
+
+    orignal = s 
+    rev = s[::-1]
+
+    return orignal == rev
+
+def twoStringRev(s1, s2):
+    if s1 == s2[::-1]:
+        return True
+    else:
+        return False
+
+def middlechar(s):
+
+    n = len(s)
+    mid = n // 2
+
+    if n % 2 == 1:
+        return s[mid]
+    else:
+        return s[mid - 1 : mid + 1]
+
+
+def secoundhalf(s):
+    n = len(s)
+    mid = n // 2
+
+    if n % 2 == 1:
+        rev = s[mid + 1:]
+    else:
+        rev = s[mid : ]
+    return rev[::-1]
+
+def removefirstandlastchar(s):
+
+    return s[1:-1]
+
+def reverse_only_chars(s):
+    s = list(s)  
+    left, right = 0, len(s) - 1
+
+    while left < right:
+        if s[left].isdigit():
+            left += 1
+        elif s[right].isdigit():
+            right -= 1
+        else:
+            s[left], s[right] = s[right], s[left]
+            left += 1
+            right -= 1
+
+    return "".join(s)
+
+def reverse_skip_spaces(s):
+    s = list(s)
+    left, right = 0, len(s) - 1
+
+    while left < right:
+        if s[left] == " ":
+            left += 1
+        elif s[right] == " ":
+            right -= 1
+        else:
+            s[left], s[right] = s[right], s[left]
+            left += 1
+            right -= 1
+
+    return "".join(s)
+
+
+
+
+
 
 
 
