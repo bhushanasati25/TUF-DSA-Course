@@ -1952,6 +1952,198 @@ def reverse_skip_spaces(s):
     return "".join(s)
 
 
+# Character & Word Manipulations
+
+def removeAllVowels(s):
+    vowels = "aeiouAEIOU"
+    strvol = ""
+
+    for ch in s:
+        if ch not in vowels:
+            strvol += ch
+    
+    return strvol
+    
+def removealltheSpace(s):
+    ans = ""
+    for ch in s:
+        if ch != " ":
+            ans += ch 
+        elif ch == " ":
+            continue
+    return ans
+
+def replaceallVolwels(s):
+
+    replvowels = "aeiouAEIOU"
+    ans = ""
+
+    for ch in s:
+        if ch in replvowels:
+            ans += "*"
+        else:
+            ans += ch
+    return ans
+
+############OR##############
+'''
+def replaceallVolwels(s):
+
+    replvowels = "aeiouAEIOU"
+    ans = ""
+
+    for ch in s:
+        if ch in replvowels:
+            ans += ch.replace(ch, "*")
+        else:
+            ans += ch
+    return ans
+'''
+
+def replaceallSpace(s):
+    ans = ""
+    for ch in s:
+        if ch == " ":
+            ans += "_"
+        else:
+            ans += ch
+    return ans
+
+def removedigits(s):
+    ans = ""
+
+    for ch in s:
+        if ch.islower():
+            ans += ch
+        elif ch.isdigit():
+            continue
+    return ans
+
+def removedigits(s):
+    ans = ""
+    for ch in s:
+        if not ch.isdigit(): 
+            ans += ch
+    return ans
+
+def removeduplicatestr(s):
+    ans = ""
+    for ch in s:
+        if ch not in ans:
+            ans += ch
+    return ans
+
+def keeponlyFirstchr(s):
+    ans = ""
+    for ch in s:
+        if ch not in ans:
+            ans += ch
+
+    return ans
+
+def swaplowertoupper(s):
+    ans = ""
+
+    for ch in s:
+        if ch.islower():
+            ans += ch.upper()
+        elif ch.isupper():
+            ans += ch.lower()
+        else:
+            ans += ch
+    return ans
+    
+def shift_by_one(s):
+    ans = ""
+
+    for ch in s:
+        if 'a' <= ch <= 'z':          # lowercase
+            ans += chr((ord(ch) - ord('a') + 1) % 26 + ord('a'))
+        elif 'A' <= ch <= 'Z':        # uppercase
+            ans += chr((ord(ch) - ord('A') + 1) % 26 + ord('A'))
+        else:                         # keep other chars same
+            ans += ch
+
+    return ans
+
+
+
+# Word - Level Thinking
+
+def eachword(s):
+    word = s.split()
+    for ch in word:
+        print(ch)
+
+def wordEvenLength(s):
+    cnt = 0
+    for ch in s.split():
+        if len(ch) % 2 == 0:
+            cnt += 1      
+    return cnt 
+
+
+def longestword(s):
+    word = s.split()
+    longest = ""
+    for ch in word:
+        if len(ch) >= len(longest):
+            longest = ch
+    return longest
+
+
+def shortestword(s):
+    word = s.split()
+    shortest = word[0]
+    for ch in word:
+        if len(ch) < len(shortest):
+            shortest = ch 
+
+    return shortest
+
+
+def swapfirstandlast(s):
+    word = s.split()
+
+    word[0], word[-1] = word[-1], word[0]
+
+    return " ".join(word)
+
+
+def printallwordStartandEndwithletter(s):
+    words = s.split()
+    for ch in words:
+        if ch[0] == ch[-1]:
+            return ch
+    return None
+
+def wordsContaintheletterA(s):
+    words = s.split()
+    cont = 0
+
+    for ch in words:
+        if "a" in ch.lower():
+            cont += 1
+    return cont
+
+
+def capitalize_words(s):
+    return s.title()
+
+
+def capitalize_words(s):
+    words = s.split()
+    result = ""
+
+    for w in words:
+        result += w[0].upper() + w[1:].lower() + " "
+
+    return result.strip()
+
+
+def normalize_spaces(s):
+    words = s.split()       # removes all extra spaces
+    return " ".join(words)  # joins with single space
 
 
 
