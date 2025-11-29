@@ -2147,9 +2147,374 @@ def normalize_spaces(s):
 
 
 
+# Mixed Logical Challenges
+
+# Category 01 - Number based Logical Combinations
+
+def Print1toN(n):
+    for i in range(1, n + 1):
+        if i % 3 == 0 and i % 5 == 0:
+            print(i)
+
+def sumofdigit(n):
+    total = 0
+    while n > 0:
+        digit = n % 10
+        total += digit
+        n //= 10
+    return total
+
+def armstrongnumber(n):
+    original = n
+    sumadd = 0
+    digits = len(str(n))
+    while n > 0:
+        digit = n % 10
+        sumadd += digit ** digits
+        n //= 10
+    return sumadd == original
+
+def printallArmstrongNumber(n):
+    for i in range(1, n + 1):
+        original = i
+        sumadd = 0
+        digits = len(str(i))
+        temp = i
+
+        while temp > 0:
+            digit = temp % 10
+            sumadd += digit ** digits
+            temp //= 10
+
+        if sumadd == original:
+            print(original)
+
+def fact(n):
+    fac = 1
+    for i in range(1, n + 1):
+        fac *= i
+    return fac  
+
+
+def fact(n):
+    if n == 0 or n == 1:      # base condition
+        return 1
+    return n * fact(n - 1)    # recursive call
+
+
+def countevenDigit(n):
+    count = 0
+    while n > 0:
+        digit = n % 10
+        if (digit % 2 == 0):
+            count += 1
+        n //= 10     
+    return count
+
+def printAllPrimes(N):
+    for num in range(2, N + 1):
+        for i in range(2, num):
+            if num % i == 0:
+                break
+        else:
+            print(num)
+        
+def printAllPrimes(N):
+    for num in range(2, N + 1):     # start from 2 because 1 is not prime
+        isPrime = True
+
+        for i in range(2, int(num**0.5) + 1):
+            if num % i == 0:
+                isPrime = False
+                break
+        
+        if isPrime:
+            print(num)
+
+def reversenumber(n):
+    rev = 0
+
+    while n > 0:
+        digit = n % 10
+        rev = rev * 10 + digit
+        n //= 10
+    
+    return rev
+
+def checkifPalindrome(n):
+    original = n 
+    rev = 0
+
+    while n > 0:
+        digit = n % 10
+        rev = rev * 10 + digit
+        n //= 10
+    return rev == original
+
+def perfectnumber(n):
+    sumofdivisior = 0
+    for i in range(1, n):
+        if (n % i == 0):
+            sumofdivisior += i 
+    return n == sumofdivisior
 
 
 
+
+# Category 2 - String + Logic Mix
+
+def anagram(s1, s2):
+
+    sort1 = sorted(s1)
+    sort2 = sorted(s2)
+
+    return sort1 == sort2
+
+def anagram(s1, s2):
+    freq = [0] * 26
+
+    for ch in s1:
+        freq[ord(ch) - ord('a')] += 1
+
+    for ch in s2:
+        freq[ord(ch) - ord('a')] -= 1
+
+    return all(x == 0 for x in freq)
+
+def countvowel(s):
+    vow = "aeiouAEIOU"
+    count = 0
+
+    for ch in s:
+        if ch in vow:
+            count += 1
+    return count
+
+def revString(s):
+
+    if len(s) % 2 == 0:
+        return s[::-1]
+
+def revString(s):
+    rev = ''
+    if len(s) % 2 == 0:
+        for ch in s:
+            rev = ch + rev
+    return rev
+
+def replacevowel(s):
+    mapping = {
+        'a': '1', 'A': '1',
+        'e': '2', 'E': '2',
+        'i': '3', 'I': '3',
+        'o': '4', 'O': '4',
+        'u': '5', 'U': '5'
+    }
+    result = ""
+    for ch in s:
+        if ch in mapping:
+            result += mapping[ch]   # replace vowel with number
+        else:
+            result += ch           # keep consonants as they are
+    return result
+            
+
+def printcharappears(s):
+    ans = ""
+    for ch in s:
+        if s.count(ch) > 1 and ch not in ans:
+            ans += ch 
+
+    return ans
+
+def startandendwitSameLetter(s):
+    word = s.split()
+    count = 0
+
+    for ch in word:
+        if ch[0] == ch[-1]:
+            count += 1
+    return count
+
+def toggleAlternateWords(s):
+    words = s.split()
+    result = []
+
+    for i in range(len(words)):
+        if i % 2 == 1:                    # alternate words (2nd, 4th, 6th...)
+            result.append(words[i].swapcase())
+        else:
+            result.append(words[i])       # keep original
+    return " ".join(result)
+
+def checkstringrotated(s1, s2):
+    if len(s1) != len(s2):
+        return False
+
+    return s2 in (s1 + s1)
+
+def countMaximumvowel(s):
+    
+    vow = "aeiouAEIOU"
+    count = 0
+
+    for ch in s:
+        if ch in vow:
+            count += 1
+    return count
+
+def max_vowel_word_simple(sentence):
+    vowels = set("aeiouAEIOU")
+    words = sentence.split()
+    max_word = ""
+    max_count = -1
+
+    for w in words:
+        count = sum(1 for ch in w if ch in vowels)
+        if count > max_count:
+            max_count = count
+            max_word = w
+
+    return max_word
+
+def duplicateword(s):
+    word = s.split()
+    ans = []
+
+    for ch in word:
+        if ch not in ans:
+            ans.append(ch)
+    
+    return " ".join(ans)
+
+
+# Array + Looping Logic
+
+def MaxiandMiniele(arr):
+    maxi = arr[0]
+    mini = arr[0]
+
+    for x in arr:
+        if x > maxi:
+            maxi = x
+        if x < mini:
+            mini = x
+    return maxi, mini
+
+def positivenegativeandZero(arr):
+    pos = 0
+    negative = 0
+    zeroes = 0
+
+    for i in arr:
+        if i > 0:
+            pos += 1
+        elif i < 0:
+            negative += 1
+        elif i == 0:
+            zeroes += 1
+    return pos, negative, zeroes
+
+def uniqueelement(arr):
+    ans = []
+
+    for i in arr:
+        if i not in ans:
+            ans.append(i)
+    return ans
+
+def reverseArr(arr):
+    return arr[::-1]
+
+def reverseArr(arr):
+    left = 0
+    right = len(arr) - 1
+
+    while left < right:
+        arr[left], arr[right] = arr[right], arr[left]  # swap
+        left += 1
+        right -= 1
+
+def shiftallzeros(arr):
+    ans = []
+    zeros = []
+
+    for i in arr:
+        if i != 0:
+            ans.append(i)
+        elif i == 0:
+            zeros.append(i)
+    
+    return ans + zeros
+
+def shiftallzeros(arr):
+    pos = 0
+    for i in range(len(arr)):
+        if arr[i] != 0:
+            arr[pos], arr[i] = arr[i], arr[pos]
+            pos += 1
+
+
+def countelementeven(arr):
+    count = []
+
+    for i in range(len(arr)):
+        if i % 2 == 0 and arr[i] % 2 == 0:
+            count.append(arr[i])
+        
+    return count
+
+def mergetwoarray(arr1, arr2):
+    return arr1 + arr2
+
+def mergeSorted(arr1, arr2):
+    i = j = 0
+    result = []
+
+    while i < len(arr1) and j < len(arr2):
+        if arr1[i] <= arr2[j]:
+            result.append(arr1[i])
+            i += 1
+        else:
+            result.append(arr2[j])
+            j += 1
+
+    # Add remaining elements
+    result.extend(arr1[i:])
+    result.extend(arr2[j:])
+    
+    return result
+
+def secoundlarele(arr):
+    arr = list(set(arr))  
+    arry = sorted(arr)
+
+    return arry[-2]
+
+def rotateRightByOne(arr):
+    n = len(arr)
+    last = arr[-1]
+
+    for i in range(n-1, 0, -1):
+        arr[i] = arr[i-1]
+    arr[0] = last
+
+
+def sumofallelementatodd(arr):
+    count = 0
+
+    for i in range(len(arr)):
+        if i % 2 != 0:
+            count += arr[i]
+
+    return count
+
+
+
+
+if __name__ == "__main__":
+    arr = list(map(int, input().strip().split(',')))
+    print(sumofallelementatodd(arr))
 
 
 
