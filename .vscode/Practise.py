@@ -2512,6 +2512,275 @@ def sumofallelementatodd(arr):
 
 
 
+# Category - Nested Logic & Pattern Flow
+
+
+def table(n=10):
+    for i in range(1, n + 1):
+        for j in range(1, n + 1):
+            print(f"{i*j:4}", end="")  # 4-space alignment
+        print()
+
+table()
+
+def print_pairs(arr, target):
+    seen = set()
+
+    for num in arr:
+        diff = target - num
+        if diff in seen:
+            print(diff, num)
+        seen.add(num)
+
+def all_subarrays(arr):
+    res = []
+    n = len(arr)
+    for i in range(n):
+        for j in range(i, n):
+            res.append(arr[i:j+1])
+    return res
+
+def check_sorted(arr):
+    ascending = True
+    descending = True
+
+    for i in range(len(arr) - 1):
+        if arr[i] > arr[i + 1]:
+            ascending = False
+        if arr[i] < arr[i + 1]:
+            descending = False
+
+    if ascending:
+        return "Ascending"
+    if descending:
+        return "Descending"
+    return "Not Sorted"
+
+def numberappear(arr):
+    count = 0
+
+    for i in range(len(arr) - 1):
+        if arr[i] == arr[i + 1]:
+            count += 1
+    
+    return count 
+
+def same_char_pairs(s):
+    for i in range(len(s)):
+        for j in range(i + 1, len(s)):
+            if s[i] == s[j]:
+                print(f"({i}, {j}) -> {s[i]}")
+
+def pattern(n):
+    for i in range(1, n + 1):
+        for j in range(i):
+            print(chr(ord('A') + j), end="")
+        print()
+
+def pascal_triangle(n):
+    triangle = []
+
+    for i in range(n):
+        row = [1] * (i + 1)
+
+        for j in range(1, i):
+            row[j] = triangle[i - 1][j - 1] + triangle[i - 1][j]
+
+        triangle.append(row)
+
+    # print in a pretty format
+    width = n * 3
+    for row in triangle:
+        print(" ".join(str(x) for x in row).center(width))
+
+
+def fib_first_n(n):
+    """
+    Return a list of the first n Fibonacci numbers using recursion.
+    Convention: Fibonacci sequence = 0, 1, 1, 2, 3, ...
+    """
+    if n <= 0:
+        return []
+    if n == 1:
+        return [0]
+    if n == 2:
+        return [0, 1]
+
+    prev = fib_first_n(n - 1)           # recursive step: list of first n-1 terms
+    prev.append(prev[-1] + prev[-2])    # append the next fib number
+    return prev
+
+def spiral_matrix(m, n):
+    # create empty m x n matrix
+    mat = [[0] * n for _ in range(m)]
+    top, bottom, left, right = 0, m - 1, 0, n - 1
+    num = 1
+
+    while top <= bottom and left <= right:
+        # left -> right (top row)
+        for col in range(left, right + 1):
+            mat[top][col] = num
+            num += 1
+        top += 1
+
+        # top -> bottom (right column)
+        for row in range(top, bottom + 1):
+            mat[row][right] = num
+            num += 1
+        right -= 1
+
+        if top <= bottom:
+            # right -> left (bottom row)
+            for col in range(right, left - 1, -1):
+                mat[bottom][col] = num
+                num += 1
+            bottom -= 1
+
+        if left <= right:
+            # bottom -> top (left column)
+            for row in range(bottom, top - 1, -1):
+                mat[row][left] = num
+                num += 1
+            left += 1
+
+    return mat
+
+def print_matrix(mat):
+    for row in mat:
+        print(" ".join(f"{x:3}" for x in row))
+
+
+# Category 5 - Applied Reasoning & Real Life Logic
+
+def student(mark):
+    count = 0
+
+    for m in mark:
+        if m >= 40:
+            count += 1
+    
+    return count
+
+def agecount(age):
+    adults = 0
+    minors = 0
+    seniors = 0
+
+    for a in age:
+        if a < 18:
+            minors += 1
+        elif a < 60:
+            adults += 1
+        else:
+            seniors += 1
+
+    return adults, minors, seniors
+
+def validatepass(password):
+    has_upper = False
+    has_lower = False
+    has_digit = False
+    has_special = False
+
+    for ch in password:
+        if ch.isupper():
+            has_upper = True
+        elif ch.islower():
+            has_lower = True
+        elif ch.isdigit():
+            has_digit = True
+        elif not ch.isalnum():  # special character
+            has_special = True
+
+    if has_upper and has_lower and has_digit and has_special:
+        return "Valid Password"
+    else:
+        return "Not Valid"
+
+def calculator(a, b, op):
+    if op == '+':
+        return a + b
+    elif op == '-':
+        return a - b
+    elif op == '*':
+        return a * b
+    elif op == '/':
+        if b == 0:
+            return "Error: Division by zero"
+        return a / b
+    else:
+        return "Invalid Operation"
+
+
+import random
+
+def cointoss(n):
+    heads = 0
+    tails = 0
+
+    for i in range(n):
+        toss = random.choice(["H", "T"])   # H = Heads, T = Tails
+        if toss == "H":
+            heads += 1
+        else:
+            tails += 1
+
+    return heads, tails
+
+def digit_frequency(num):
+    freq = [0] * 10        # index 0–9 for each digit
+
+    for ch in str(num):    # convert number to string
+        freq[int(ch)] += 1
+
+    return freq
+
+def common_unique(a, b):
+    # unique intersection
+    return list(set(a) & set(b))
+
+def common_chars(s1, s2, case_insensitive=False):
+    if case_insensitive:
+        s1, s2 = s1.lower(), s2.lower()
+    return sorted(set(s1) & set(s2))
+
+def is_prime(n):
+    if n <= 1:
+        return False
+    if n <= 3:
+        return True
+    if n % 2 == 0 or n % 3 == 0:
+        return False
+    i = 5
+    while i * i <= n:
+        if n % i == 0 or n % (i + 2) == 0:
+            return False
+        i += 6
+    return True
+
+def count_primes(arr):
+    return sum(1 for x in arr if is_prime(x))
+
+# Example
+arr = [2, 3, 4, 5, 15, 17, 19, 1, 0, -3]
+print(count_primes(arr))  # 5  (2,3,5,17,19)
+
+
+import re
+
+def palindromic_words(sentence):
+    # extract words, remove non-alphanumeric from ends
+    words = re.findall(r"\b[\w']+\b", sentence)  # keeps letters/digits/underscore/apos
+    pals = [w for w in words if w.lower() == w.lower()[::-1] and len(w) > 0]
+    return pals
+
+# Example
+sent = "Madam Anna and Otto went to level the radar. 'wow'!"
+print(palindromic_words(sent))  # ['Madam', 'Anna', 'Otto', 'level', 'radar', 'wow']
+
+
+
+
 if __name__ == "__main__":
     arr = list(map(int, input().strip().split(',')))
     print(sumofallelementatodd(arr))
