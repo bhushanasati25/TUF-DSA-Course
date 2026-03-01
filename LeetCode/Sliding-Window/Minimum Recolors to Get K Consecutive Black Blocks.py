@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Minimum Recolors to Get K Consecutive Black Blocks
+📂 Category: Sliding-Window
+🎯 Difficulty: Easy
+🔗 URL: https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks/
+
+📝 Description:
+   Min recolors to get k consecutive black blocks.
+"""
+
 class Solution(object):
     def minimumRecolors(self, blocks, k):
         """

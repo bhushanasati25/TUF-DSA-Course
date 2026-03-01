@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Maximize the Number of Target Nodes After Connecting Trees I
+📂 Category: Graphs
+🎯 Difficulty: Medium
+🔗 URL: https://leetcode.com/problems/maximize-the-number-of-target-nodes-after-connecting-trees-i/
+
+📝 Description:
+   Find max target nodes after connecting two trees.
+"""
+
 import sys
 sys.setrecursionlimit(10000)
 

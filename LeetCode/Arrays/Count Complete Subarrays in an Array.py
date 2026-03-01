@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Count Complete Subarrays in an Array
+📂 Category: Arrays
+🎯 Difficulty: Medium
+🔗 URL: https://leetcode.com/problems/count-complete-subarrays-in-an-array/
+
+📝 Description:
+   Count subarrays containing all distinct elements of the full array.
+"""
+
 class Solution(object):
     def countCompleteSubarrays(self, nums):
         """

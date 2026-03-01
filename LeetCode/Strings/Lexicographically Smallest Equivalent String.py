@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Lexicographically Smallest Equivalent String
+📂 Category: Strings
+🎯 Difficulty: Medium
+🔗 URL: https://leetcode.com/problems/lexicographically-smallest-equivalent-string/
+
+📝 Description:
+   Use character equivalence groups to make string lexicographically smallest.
+"""
+
 class Solution(object):
     def smallestEquivalentString(self, s1, s2, baseStr):
         """

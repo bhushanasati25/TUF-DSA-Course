@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Alternating Groups II
+📂 Category: Arrays
+🎯 Difficulty: Medium
+🔗 URL: https://leetcode.com/problems/alternating-groups-ii/
+
+📝 Description:
+   Count alternating groups of a given size in a circular array.
+"""
+
 class Solution(object):
     def numberOfAlternatingGroups(self, colors, k):
         """

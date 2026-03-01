@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Count Days Without Meetings
+📂 Category: Math-and-Counting
+🎯 Difficulty: Medium
+🔗 URL: https://leetcode.com/problems/count-days-without-meetings/
+
+📝 Description:
+   Count available days in range excluding meeting intervals.
+"""
+
 class Solution(object):
     def countDays(self, days, meetings):
         """

@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Apply Operations to Maximize Score
+📂 Category: Math-and-Counting
+🎯 Difficulty: Hard
+🔗 URL: https://leetcode.com/problems/apply-operations-to-maximize-score/
+
+📝 Description:
+   Max score by selecting k elements using prime score ordering.
+"""
+
 class Solution(object):
     def maximumScore(self, nums, k):
         MOD = 10**9 + 7

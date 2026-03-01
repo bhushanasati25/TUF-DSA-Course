@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Find the Maximum Sum of Node Values
+📂 Category: Greedy
+🎯 Difficulty: Hard
+🔗 URL: https://leetcode.com/problems/find-the-maximum-sum-of-node-values/
+
+📝 Description:
+   Maximize tree node sum by XOR-ing edges with k.
+"""
+
 class Solution(object):
     def maximumValueSum(self, nums, k, edges):
         """

@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Finding Pairs With a Certain Sum
+📂 Category: Greedy
+🎯 Difficulty: Medium
+🔗 URL: https://leetcode.com/problems/finding-pairs-with-a-certain-sum/
+
+📝 Description:
+   Design data structure for finding pairs that sum to a target.
+"""
+
 from collections import Counter
 
 class FindSumPairs(object):

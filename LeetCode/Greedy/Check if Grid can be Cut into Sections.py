@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Check if Grid can be Cut into Sections
+📂 Category: Greedy
+🎯 Difficulty: Medium
+🔗 URL: https://leetcode.com/problems/check-if-grid-can-be-cut-into-sections/
+
+📝 Description:
+   Check if grid can be cut into 3 sections by 2 horizontal/vertical cuts.
+"""
+
 # Time:  O(nlogn)
 # Space: O(1)
 

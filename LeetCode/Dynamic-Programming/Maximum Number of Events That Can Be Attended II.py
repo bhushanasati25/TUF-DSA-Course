@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Maximum Number of Events That Can Be Attended II
+📂 Category: Dynamic-Programming
+🎯 Difficulty: Hard
+🔗 URL: https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended-ii/
+
+📝 Description:
+   Find max value attending at most k events.
+"""
+
 from bisect import bisect_left
 
 class Solution(object):

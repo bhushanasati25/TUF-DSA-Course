@@ -1,3 +1,13 @@
+"""
+🔗 Problem: 3Sum
+📂 Category: Arrays
+🎯 Difficulty: Medium
+🔗 URL: https://leetcode.com/problems/3sum/
+
+📝 Description:
+   Find all unique triplets in the array that sum to zero.
+"""
+
 class Solution(object):
     def threeSum(self, nums):
         """

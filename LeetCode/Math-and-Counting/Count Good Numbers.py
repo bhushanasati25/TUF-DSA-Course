@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Count Good Numbers
+📂 Category: Math-and-Counting
+🎯 Difficulty: Medium
+🔗 URL: https://leetcode.com/problems/count-good-numbers/
+
+📝 Description:
+   Count digit strings with even digits at even positions, primes at odd.
+"""
+
 class Solution(object):
     def countGoodNumbers(self, n):
         """

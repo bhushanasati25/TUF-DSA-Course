@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Find All K-Distant Indices in an Array
+📂 Category: Arrays
+🎯 Difficulty: Easy
+🔗 URL: https://leetcode.com/problems/find-all-k-distant-indices-in-an-array/
+
+📝 Description:
+   Find indices within distance k of an element equal to a key.
+"""
+
 class Solution(object):
     def findKDistantIndices(self, nums, key, k):
         """

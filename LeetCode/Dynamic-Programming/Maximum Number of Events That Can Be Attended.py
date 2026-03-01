@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Maximum Number of Events That Can Be Attended
+📂 Category: Dynamic-Programming
+🎯 Difficulty: Medium
+🔗 URL: https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended/
+
+📝 Description:
+   Find max events you can attend (one per day).
+"""
+
 import heapq
 
 class Solution(object):

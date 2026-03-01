@@ -3,7 +3,6 @@
 <div align="center">
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
 ![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
@@ -19,15 +18,24 @@
 
 | Category | Problems Solved |
 |----------|:---------------:|
-| **LeetCode Problems** | 76 |
+| **LeetCode Problems** | 329 |
 | **Pattern Programs** | 22 |
 | **Basic Maths** | 13 |
 | **Basic Recursion** | 9 |
 | **Basic Hashing** | 7 |
 | **Basic Strings** | 8 |
 | **Basic Arrays** | 4 |
-| **Sorting Algorithms** | 2 |
-| **Total** | **141** |
+| **Sorting Algorithms** | 5 |
+| **Linked List** | 5 |
+| **Stack & Queue** | 5 |
+| **Binary Tree** | 4 |
+| **Total** | **411** |
+
+### LeetCode Difficulty Breakdown
+
+| 🟢 Easy | 🟡 Medium | 🔴 Hard | Total |
+|:--------:|:---------:|:-------:|:-----:|
+| 87 | 166 | 76 | **329** |
 
 ---
 
@@ -37,23 +45,28 @@
 TUF-DSA-Course/
 │
 ├── 📂 LeetCode/                    # Categorized LeetCode Solutions (Python)
-│   ├── Arrays/                     # Array manipulation problems
-│   ├── Binary-Search/              # Binary search & variations
-│   ├── Dynamic-Programming/        # DP problems (1D, 2D, subsequences)
-│   ├── Graphs/                     # Graph traversals, shortest paths
-│   ├── Greedy/                     # Greedy algorithm problems
-│   ├── Math-and-Counting/          # Mathematical & combinatorics
-│   ├── Sliding-Window/             # Sliding window technique
-│   ├── Strings/                    # String manipulation
-│   └── Two-Pointers/               # Two pointer technique
+│   ├── Arrays/                     # Array manipulation problems (49)
+│   ├── Binary-Search/              # Binary search & variations (14)
+│   ├── Design/                     # System design problems (6)
+│   ├── Dynamic-Programming/        # DP problems (1D, 2D, subsequences) (46)
+│   ├── Graphs/                     # Graph traversals, shortest paths (15)
+│   ├── Greedy/                     # Greedy algorithm problems (25)
+│   ├── Math-and-Counting/          # Mathematical & combinatorics (109)
+│   ├── Sliding-Window/             # Sliding window technique (14)
+│   ├── Strings/                    # String manipulation (39)
+│   ├── Trees/                      # Tree problems (5)
+│   └── Two-Pointers/               # Two pointer technique (7)
 │
-├── 📂 Patterns/                    # 22 Pattern printing programs (C++)
-├── 📂 Basic Maths/                 # GCD, LCM, Prime, Factorial (C++)
-├── 📂 Basic Recursion/             # Recursion fundamentals (C++)
-├── 📂 Basic Hashing/               # Hash map/set problems (C++)
-├── 📂 Basic String/                # String operations (C++)
-├── 📂 Basic Array/                 # Array basics (C++)
-├── 📂 Sorting/                     # Sorting algorithms (C++)
+├── 📂 Patterns/                    # 22 Pattern printing programs
+├── 📂 Basic Maths/                 # GCD, LCM, Prime, Factorial
+├── 📂 Basic Recursion/             # Recursion fundamentals
+├── 📂 Basic Hashing/               # Hash map/set problems
+├── 📂 Basic String/                # String operations
+├── 📂 Basic Array/                 # Array basics
+├── 📂 Sorting/                     # Selection, Bubble, Insertion, Merge, Quick Sort
+├── 📂 Linked List/                 # Singly/Doubly LL, Cycle Detection, Merge
+├── 📂 Stack and Queue/             # Stack, Queue, Parentheses, NGE
+├── 📂 Binary Tree/                 # Traversals, BST, Symmetric, Diameter
 └── 📂 Python/                      # Python basics & practice
 ```
 
@@ -61,117 +74,23 @@ TUF-DSA-Course/
 
 ## 🏆 LeetCode Problems
 
-### Arrays (12 Problems)
-| Problem | Difficulty |
-|---------|:----------:|
-| 3Sum | 🟡 Medium |
-| Alternating Groups II | 🟡 Medium |
-| Count Complete Subarrays in an Array | 🟡 Medium |
-| Divide Array Into Arrays With Max Difference | 🟡 Medium |
-| Divide Array Into Equal Pairs | 🟢 Easy |
-| Find All K-Distant Indices in an Array | 🟢 Easy |
-| Find Lucky Integer in an Array | 🟢 Easy |
-| Find Subsequence of Length K With the Largest Sum | 🟢 Easy |
-| Maximum Value of an Ordered Triplet II | 🟡 Medium |
-| Merge Two 2D Arrays by Summing Values | 🟢 Easy |
-| Partition Array According to Given Pivot | 🟡 Medium |
-| Partition Array Such That Maximum Difference Is K | 🟡 Medium |
+### By Category
 
-### Binary Search (5 Problems)
-| Problem | Difficulty |
-|---------|:----------:|
-| House Robber IV | 🟡 Medium |
-| Kth Smallest Product of Two Sorted Arrays | 🔴 Hard |
-| Maximum Candies Allocated to K Children | 🟡 Medium |
-| Minimum Time to Repair Cars | 🟡 Medium |
-| First Occurrence | 🟢 Easy |
+| Category | Count | 🟢 | 🟡 | 🔴 | Topics |
+|----------|:-----:|:--:|:--:|:--:|--------|
+| **Math & Counting** | 109 | 41 | 51 | 17 | Bit manipulation, number theory, geometry |
+| **Arrays** | 49 | 23 | 21 | 5 | Matrix operations, subarrays, traversal |
+| **Dynamic Programming** | 46 | 2 | 26 | 18 | 1D/2D DP, subsequences, game theory |
+| **Strings** | 39 | 12 | 20 | 7 | Manipulation, lexicographic ordering |
+| **Greedy** | 25 | 1 | 15 | 9 | Scheduling, optimization, intervals |
+| **Graphs** | 15 | 0 | 6 | 9 | BFS/DFS, shortest paths, components |
+| **Binary Search** | 14 | 1 | 8 | 5 | Search on answer, sorted arrays |
+| **Sliding Window** | 14 | 4 | 6 | 4 | Fixed/variable window, frequency |
+| **Two Pointers** | 7 | 2 | 4 | 1 | Pair finding, subsequences |
+| **Design** | 6 | 0 | 5 | 1 | System & data structure design |
+| **Trees** | 5 | 1 | 4 | 0 | BST, traversal, subtree problems |
 
-### Dynamic Programming (8 Problems)
-| Problem | Difficulty |
-|---------|:----------:|
-| Count Number of Balanced Permutations | 🔴 Hard |
-| Domino and Tromino Tiling | 🟡 Medium |
-| Largest Divisible Subset | 🟡 Medium |
-| Length of Longest Fibonacci Subsequence | 🟡 Medium |
-| Maximum Number of Events That Can Be Attended | 🟡 Medium |
-| Maximum Number of Events That Can Be Attended II | 🔴 Hard |
-| Partition Equal Subset Sum | 🟡 Medium |
-| Shortest Common Supersequence | 🔴 Hard |
-
-### Graphs (7 Problems)
-| Problem | Difficulty |
-|---------|:----------:|
-| Count the Number of Complete Components | 🟡 Medium |
-| Find Closest Node to Given Two Nodes | 🟡 Medium |
-| Largest Color Value in a Directed Graph | 🔴 Hard |
-| Maximize the Number of Target Nodes After Connecting Trees I | 🟡 Medium |
-| Maximum Number of Points From Grid Queries | 🔴 Hard |
-| Number of Ways to Arrive at Destination | 🟡 Medium |
-| Snakes and Ladders | 🟡 Medium |
-
-### Sliding Window (5 Problems)
-| Problem | Difficulty |
-|---------|:----------:|
-| Count of Interesting Subarrays | 🟡 Medium |
-| Count Subarrays With Fixed Bounds | 🔴 Hard |
-| Count Subarrays With Score Less Than K | 🔴 Hard |
-| Longest Nice Subarray | 🟡 Medium |
-| Minimum Recolors to Get K Consecutive Black Blocks | 🟢 Easy |
-
-### Strings (13 Problems)
-| Problem | Difficulty |
-|---------|:----------:|
-| Divide a String Into Groups of Size k | 🟢 Easy |
-| Find the K-th Character in String Game I | 🟢 Easy |
-| Find the K-th Character in String Game II | 🔴 Hard |
-| Find the Original Typed String I | 🟢 Easy |
-| Find the Original Typed String II | 🔴 Hard |
-| Find Words Containing Character | 🟢 Easy |
-| Lexicographically Minimum String After Removing Stars | 🟡 Medium |
-| Lexicographically Smallest Equivalent String | 🟡 Medium |
-| Longest Palindrome by Concatenating Two Letter Words | 🟡 Medium |
-| Minimum Deletions to Make String K-Special | 🟡 Medium |
-| Using a Robot to Print the Lexicographically Smallest String | 🟡 Medium |
-| Word Search II | 🔴 Hard |
-| Zigzag Conversion | 🟡 Medium |
-
-### Two Pointers (6 Problems)
-| Problem | Difficulty |
-|---------|:----------:|
-| Count of Substrings Containing Every Vowel and K Consonants II | 🟡 Medium |
-| Longest Binary Subsequence Less Than or Equal to K | 🟡 Medium |
-| Longest Harmonious Subsequence | 🟢 Easy |
-| Longest Subsequence Repeated k Times | 🔴 Hard |
-| Longest Unequal Adjacent Groups Subsequence I | 🟢 Easy |
-| Number of Substrings Containing All Three Characters | 🟡 Medium |
-
-### Math & Counting (12 Problems)
-| Problem | Difficulty |
-|---------|:----------:|
-| Apply Operations to Maximize Score | 🔴 Hard |
-| Count Days Without Meetings | 🟡 Medium |
-| Count Good Numbers | 🟡 Medium |
-| Count Symmetric Integers | 🟢 Easy |
-| Count the Hidden Sequences | 🟡 Medium |
-| Count the Number of Arrays with K Matching Adjacent Elements | 🔴 Hard |
-| Count the Number of Ideal Arrays | 🔴 Hard |
-| Count the Number of Powerful Integers | 🔴 Hard |
-| Count Total Number of Colored Cells | 🟡 Medium |
-| Divisible and Non-divisible Sums Difference | 🟢 Easy |
-| Number of Subsequences That Satisfy the Given Sum Condition | 🟡 Medium |
-| Sum of k-Mirror Numbers | 🔴 Hard |
-
-### Greedy (8 Problems)
-| Problem | Difficulty |
-|---------|:----------:|
-| Check if Grid can be Cut into Sections | 🟡 Medium |
-| Find the Maximum Sum of Node Values | 🔴 Hard |
-| Finding Pairs With a Certain Sum | 🟡 Medium |
-| Maximum Manhattan Distance After K Changes | 🟡 Medium |
-| Minimum Domino Rotations For Equal Row | 🟡 Medium |
-| Minimum Operations to Make Binary Array Elements Equal to One I | 🟡 Medium |
-| Reschedule Meetings for Maximum Free Time I | 🟡 Medium |
-| Reschedule Meetings for Maximum Free Time II | 🔴 Hard |
+> Each subdirectory contains its own **README.md** with a full table of problems, difficulty, descriptions, and LeetCode links.
 
 ---
 
@@ -193,27 +112,41 @@ Star patterns, number patterns, and character patterns for building logic.
 - Frequency Count, Anagram Check
 - Isomorphic Strings, Character Sorting
 
-### Sorting Algorithms (2 Programs)
-- Selection Sort
-- Bubble Sort
+### Sorting Algorithms (5 Programs)
+- Selection Sort, Bubble Sort
+- Insertion Sort, Merge Sort, Quick Sort
+
+### Linked List (5 Programs)
+- Singly Linked List, Doubly Linked List
+- Detect Cycle (Floyd's Algorithm)
+- Middle of Linked List, Merge Two Sorted Lists
+
+### Stack & Queue (4 Programs)
+- Stack, Queue Implementation
+- Valid Parentheses, Next Greater Element
+
+### Binary Tree (4 Programs)
+- Inorder, Preorder, Postorder Traversal
+- Level Order Traversal (BFS)
+- Binary Search Tree (Insert, Search, Delete)
+- Symmetric Tree & Diameter
 
 ---
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-- **Python 3.x** for LeetCode solutions
-- **C++ Compiler (g++)** for fundamental programs
+- **Python 3.x** — the entire project is in Python
 
 ### Running Solutions
 
 ```bash
-# Python solutions
+# LeetCode solutions
 python3 "LeetCode/Arrays/3Sum.py"
 
-# C++ solutions
-g++ -o output "Basic Maths/GCD of two numbers.cpp"
-./output
+# Fundamental programs
+python3 "Sorting/Merge Sort.py"
+python3 "Patterns/Pattern 7.py"
 ```
 
 ---

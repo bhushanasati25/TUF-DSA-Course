@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Minimum Domino Rotations For Equal Row
+📂 Category: Greedy
+🎯 Difficulty: Medium
+🔗 URL: https://leetcode.com/problems/minimum-domino-rotations-for-equal-row/
+
+📝 Description:
+   Find min rotations to make all values in a row equal.
+"""
+
 class Solution(object):
     def minDominoRotations(self, tops, bottoms):
         """

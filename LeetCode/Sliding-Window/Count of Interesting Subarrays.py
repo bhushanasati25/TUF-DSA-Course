@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Count of Interesting Subarrays
+📂 Category: Sliding-Window
+🎯 Difficulty: Medium
+🔗 URL: https://leetcode.com/problems/count-of-interesting-subarrays/
+
+📝 Description:
+   Count subarrays where count of special elements mod k equals target.
+"""
+
 from collections import defaultdict
 
 class Solution(object):

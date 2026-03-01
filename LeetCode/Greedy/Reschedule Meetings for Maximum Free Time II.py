@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Reschedule Meetings for Maximum Free Time II
+📂 Category: Greedy
+🎯 Difficulty: Hard
+🔗 URL: https://leetcode.com/problems/reschedule-meetings-for-maximum-free-time-ii/
+
+📝 Description:
+   Reschedule one meeting to maximize free time window.
+"""
+
 class Solution(object):
     def maxFreeTime(self, eventTime, startTime, endTime):
         """

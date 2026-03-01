@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Partition Array Such That Maximum Difference Is K
+📂 Category: Arrays
+🎯 Difficulty: Medium
+🔗 URL: https://leetcode.com/problems/partition-array-such-that-maximum-difference-is-k/
+
+📝 Description:
+   Partition array into minimum subsequences with max diff ≤ k.
+"""
+
 class Solution(object):
     def partitionArray(self, nums, k):
         """

@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Minimum Time to Repair Cars
+📂 Category: Binary-Search
+🎯 Difficulty: Medium
+🔗 URL: https://leetcode.com/problems/minimum-time-to-repair-cars/
+
+📝 Description:
+   Find minimum time for mechanics to repair all cars.
+"""
+
 import math
 
 class Solution(object):

@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Merge Two 2D Arrays by Summing Values
+📂 Category: Arrays
+🎯 Difficulty: Easy
+🔗 URL: https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/
+
+📝 Description:
+   Merge two sparse 2D arrays by summing values with same id.
+"""
+
 class Solution(object):
     def mergeArrays(self, nums1, nums2):
         """

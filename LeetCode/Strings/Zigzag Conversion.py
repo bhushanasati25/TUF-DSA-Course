@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Zigzag Conversion
+📂 Category: Strings
+🎯 Difficulty: Medium
+🔗 URL: https://leetcode.com/problems/zigzag-conversion/
+
+📝 Description:
+   Convert string to zigzag pattern on given rows, read line by line.
+"""
+
 class Solution(object):
     def convert(self, s, numRows):
         """

@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Count the Number of Arrays with K Matching Adjacent Elements
+📂 Category: Math-and-Counting
+🎯 Difficulty: Hard
+🔗 URL: https://leetcode.com/problems/count-the-number-of-arrays-with-k-matching-adjacent-elements/
+
+📝 Description:
+   Count arrays with exactly k matching adjacent pairs.
+"""
+
 class Solution(object):
     def countGoodArrays(self, n, m, k):
         """

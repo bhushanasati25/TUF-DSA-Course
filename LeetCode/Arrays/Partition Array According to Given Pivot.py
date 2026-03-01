@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Partition Array According to Given Pivot
+📂 Category: Arrays
+🎯 Difficulty: Medium
+🔗 URL: https://leetcode.com/problems/partition-array-according-to-given-pivot/
+
+📝 Description:
+   Rearrange array so elements < pivot come before elements > pivot.
+"""
+
 class Solution(object):
     def pivotArray(self, nums, pivot):
         """

@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Lexicographically Minimum String After Removing Stars
+📂 Category: Strings
+🎯 Difficulty: Medium
+🔗 URL: https://leetcode.com/problems/lexicographically-minimum-string-after-removing-stars/
+
+📝 Description:
+   Remove stars and adjacent smallest char to get lexicographic min.
+"""
+
 from collections import defaultdict
 from string import ascii_lowercase
 

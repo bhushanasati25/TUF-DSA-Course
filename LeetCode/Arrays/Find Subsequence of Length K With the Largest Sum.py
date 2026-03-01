@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Find Subsequence of Length K With the Largest Sum
+📂 Category: Arrays
+🎯 Difficulty: Easy
+🔗 URL: https://leetcode.com/problems/find-subsequence-of-length-k-with-the-largest-sum/
+
+📝 Description:
+   Return the subsequence of length k with the maximum sum.
+"""
+
 class Solution(object):
     def maxSubsequence(self, nums, k):
         """

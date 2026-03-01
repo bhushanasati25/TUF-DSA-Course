@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Count Subarrays With Fixed Bounds
+📂 Category: Sliding-Window
+🎯 Difficulty: Hard
+🔗 URL: https://leetcode.com/problems/count-subarrays-with-fixed-bounds/
+
+📝 Description:
+   Count subarrays where min equals minK and max equals maxK.
+"""
+
 class Solution(object):
     def countSubarrays(self, nums, minK, maxK):
         """

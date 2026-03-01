@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Count the Number of Powerful Integers
+📂 Category: Math-and-Counting
+🎯 Difficulty: Hard
+🔗 URL: https://leetcode.com/problems/count-the-number-of-powerful-integers/
+
+📝 Description:
+   Count numbers in range with bounded digits ending with suffix.
+"""
+
 class Solution:
     def numberOfPowerfulInt(self, start: int, finish: int, limit: int, s: str) -> int:
         @cache

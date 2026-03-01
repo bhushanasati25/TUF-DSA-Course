@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Longest Palindrome by Concatenating Two Letter Words
+📂 Category: Strings
+🎯 Difficulty: Medium
+🔗 URL: https://leetcode.com/problems/longest-palindrome-by-concatenating-two-letter-words/
+
+📝 Description:
+   Find longest palindrome by concatenating two-letter words.
+"""
+
 from collections import Counter
 
 class Solution(object):

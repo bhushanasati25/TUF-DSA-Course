@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Maximum Candies Allocated to K Children
+📂 Category: Binary-Search
+🎯 Difficulty: Medium
+🔗 URL: https://leetcode.com/problems/maximum-candies-allocated-to-k-children/
+
+📝 Description:
+   Find max candies each child gets when distributing to k children.
+"""
+
 class Solution(object):
     def maximumCandies(self, candies, k):
         """

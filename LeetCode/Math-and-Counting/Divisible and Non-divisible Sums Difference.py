@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Divisible and Non-divisible Sums Difference
+📂 Category: Math-and-Counting
+🎯 Difficulty: Easy
+🔗 URL: https://leetcode.com/problems/divisible-and-non-divisible-sums-difference/
+
+📝 Description:
+   Difference of sums: not divisible by m minus divisible by m.
+"""
+
 class Solution(object):
     def differenceOfSums(self, n, m):
         """

@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Count Number of Balanced Permutations
+📂 Category: Dynamic-Programming
+🎯 Difficulty: Hard
+🔗 URL: https://leetcode.com/problems/count-number-of-balanced-permutations/
+
+📝 Description:
+   Count permutations where even and odd index sums are equal.
+"""
+
 # Time:  O(9 * (9 * n / 2) * (n / 2)) = O(n^2)
 # Space: O((9 * n / 2) * (n / 2)) = O(n^2)
 

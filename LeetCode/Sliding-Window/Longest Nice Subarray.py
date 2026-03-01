@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Longest Nice Subarray
+📂 Category: Sliding-Window
+🎯 Difficulty: Medium
+🔗 URL: https://leetcode.com/problems/longest-nice-subarray/
+
+📝 Description:
+   Find longest subarray where all pairs have AND = 0.
+"""
+
 class Solution(object):
     def longestNiceSubarray(self, nums):
         l = 0

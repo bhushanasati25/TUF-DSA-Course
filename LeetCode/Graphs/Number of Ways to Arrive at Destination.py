@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Number of Ways to Arrive at Destination
+📂 Category: Graphs
+🎯 Difficulty: Medium
+🔗 URL: https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/
+
+📝 Description:
+   Count shortest paths from node 0 to node n-1.
+"""
+
 import heapq
 
 class Solution(object):

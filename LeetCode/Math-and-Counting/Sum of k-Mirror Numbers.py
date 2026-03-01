@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Sum of k-Mirror Numbers
+📂 Category: Math-and-Counting
+🎯 Difficulty: Hard
+🔗 URL: https://leetcode.com/problems/sum-of-k-mirror-numbers/
+
+📝 Description:
+   Sum the first n numbers that are palindromes in base 10 and base k.
+"""
+
 class Solution(object):
     def kMirror(self, k, n):
         """

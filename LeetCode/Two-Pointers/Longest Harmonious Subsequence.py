@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Longest Harmonious Subsequence
+📂 Category: Two-Pointers
+🎯 Difficulty: Easy
+🔗 URL: https://leetcode.com/problems/longest-harmonious-subsequence/
+
+📝 Description:
+   Find longest subsequence where max-min = 1.
+"""
+
 from collections import Counter
 
 class Solution(object):

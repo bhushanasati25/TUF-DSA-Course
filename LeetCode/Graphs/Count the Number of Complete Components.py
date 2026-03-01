@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Count the Number of Complete Components
+📂 Category: Graphs
+🎯 Difficulty: Medium
+🔗 URL: https://leetcode.com/problems/count-the-number-of-complete-components/
+
+📝 Description:
+   Count complete connected components in an undirected graph.
+"""
+
 class Solution(object):
     def countCompleteComponents(self, n, edges):
         """

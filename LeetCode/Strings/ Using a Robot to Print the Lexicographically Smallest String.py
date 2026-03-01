@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Using a Robot to Print the Lexicographically Smallest String
+📂 Category: Strings
+🎯 Difficulty: Medium
+🔗 URL: https://leetcode.com/problems/using-a-robot-to-print-the-lexicographically-smallest-string/
+
+📝 Description:
+   Use stack-based robot operations to print smallest string.
+"""
+
 from collections import Counter
 
 class Solution(object):

@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Kth Smallest Product of Two Sorted Arrays
+📂 Category: Binary-Search
+🎯 Difficulty: Hard
+🔗 URL: https://leetcode.com/problems/kth-smallest-product-of-two-sorted-arrays/
+
+📝 Description:
+   Find the kth smallest product from two sorted arrays.
+"""
+
 class Solution(object):
     def kthSmallestProduct(self, nums1, nums2, k):
         """

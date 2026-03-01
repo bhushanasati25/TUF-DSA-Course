@@ -1,0 +1,27 @@
+"""
+🔗 Problem: Maximum Unique Subarray Sum After Deletion
+📂 Category: Sliding-Window
+🎯 Difficulty: Easy
+🔗 URL: https://leetcode.com/problems/maximum-unique-subarray-sum-after-deletion/
+
+📝 Description:
+   Max subarray sum after optional deletions, keeping unique elements.
+"""
+
+class Solution(object):
+    def maxSum(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        max_num = max(nums)
+        if max_num <= 0:
+            return max_num
+
+        seen = set()
+        total = 0
+        for num in nums:
+            if num > 0 and num not in seen:
+                seen.add(num)
+                total += num
+        return total

@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Longest Subsequence Repeated k Times
+📂 Category: Two-Pointers
+🎯 Difficulty: Hard
+🔗 URL: https://leetcode.com/problems/longest-subsequence-repeated-k-times/
+
+📝 Description:
+   Find longest subsequence that repeats k times in the string.
+"""
+
 from collections import deque
 
 class Solution(object):

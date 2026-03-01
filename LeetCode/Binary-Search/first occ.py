@@ -1,3 +1,13 @@
+"""
+🔗 Problem: first occ
+📂 Category: Binary-Search
+🎯 Difficulty: Medium
+🔗 URL: https://leetcode.com/problems/first-occ/
+
+📝 Description:
+   Solve the first occ problem.
+"""
+
 #Recursive Binary Search
 def firstOccurenceRecursive(arr, low, high, x):
     if(low>high):

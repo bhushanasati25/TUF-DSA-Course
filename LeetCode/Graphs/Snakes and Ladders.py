@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Snakes and Ladders
+📂 Category: Graphs
+🎯 Difficulty: Medium
+🔗 URL: https://leetcode.com/problems/snakes-and-ladders/
+
+📝 Description:
+   Find minimum moves to reach the last cell in snakes & ladders.
+"""
+
 from collections import deque
 
 class Solution(object):

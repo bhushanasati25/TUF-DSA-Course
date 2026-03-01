@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Word Search II
+📂 Category: Strings
+🎯 Difficulty: Hard
+🔗 URL: https://leetcode.com/problems/word-search-ii/
+
+📝 Description:
+   Find all dictionary words on a board using Trie + backtracking.
+"""
+
 class TrieNode:
     def __init__(self):
         self.children = {}

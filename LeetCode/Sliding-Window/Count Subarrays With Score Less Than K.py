@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Count Subarrays With Score Less Than K
+📂 Category: Sliding-Window
+🎯 Difficulty: Hard
+🔗 URL: https://leetcode.com/problems/count-subarrays-with-score-less-than-k/
+
+📝 Description:
+   Count subarrays with sum × length < k.
+"""
+
 class Solution(object):
     def countSubarrays(self, nums, k):
         """

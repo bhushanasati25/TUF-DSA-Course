@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Divide a String Into Groups of Size k
+📂 Category: Strings
+🎯 Difficulty: Easy
+🔗 URL: https://leetcode.com/problems/divide-a-string-into-groups-of-size-k/
+
+📝 Description:
+   Split string into groups of size k, padding last group if needed.
+"""
+
 class Solution(object):
     def divideString(self, s, k, fill):
         """

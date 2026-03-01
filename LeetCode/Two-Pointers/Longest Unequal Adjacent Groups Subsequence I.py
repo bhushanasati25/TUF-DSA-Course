@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Longest Unequal Adjacent Groups Subsequence I
+📂 Category: Two-Pointers
+🎯 Difficulty: Easy
+🔗 URL: https://leetcode.com/problems/longest-unequal-adjacent-groups-subsequence-i/
+
+📝 Description:
+   Find longest subsequence with alternating group values.
+"""
+
 class Solution(object):
     def getLongestSubsequence(self, words, groups):
         """

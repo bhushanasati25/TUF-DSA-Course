@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Shortest Common Supersequence
+📂 Category: Dynamic-Programming
+🎯 Difficulty: Hard
+🔗 URL: https://leetcode.com/problems/shortest-common-supersequence/
+
+📝 Description:
+   Find shortest string containing both given strings as subsequences.
+"""
+
 class Solution(object):
     def shortestCommonSupersequence(self, str1, str2):
         """

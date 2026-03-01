@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Count of Substrings Containing Every Vowel and K Consonants II
+📂 Category: Two-Pointers
+🎯 Difficulty: Medium
+🔗 URL: https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-ii/
+
+📝 Description:
+   Count substrings with all 5 vowels and exactly k consonants.
+"""
+
 # two pointers, sliding window, freq table
 class Solution(object):
     def countOfSubstrings(self, word, k):

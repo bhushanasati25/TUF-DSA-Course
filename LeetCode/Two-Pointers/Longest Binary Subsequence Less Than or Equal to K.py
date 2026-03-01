@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Longest Binary Subsequence Less Than or Equal to K
+📂 Category: Two-Pointers
+🎯 Difficulty: Medium
+🔗 URL: https://leetcode.com/problems/longest-binary-subsequence-less-than-or-equal-to-k/
+
+📝 Description:
+   Find longest binary subsequence with decimal value ≤ k.
+"""
+
 class Solution(object):
     def longestSubsequence(self, s, k):
         """

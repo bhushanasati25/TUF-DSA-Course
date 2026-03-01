@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Domino and Tromino Tiling
+📂 Category: Dynamic-Programming
+🎯 Difficulty: Medium
+🔗 URL: https://leetcode.com/problems/domino-and-tromino-tiling/
+
+📝 Description:
+   Count ways to tile a 2×n board with dominoes and trominoes.
+"""
+
 class Solution(object):
     def numTilings(self, n):
         """

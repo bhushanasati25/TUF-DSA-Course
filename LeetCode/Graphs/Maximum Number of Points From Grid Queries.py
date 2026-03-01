@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Maximum Number of Points From Grid Queries
+📂 Category: Graphs
+🎯 Difficulty: Hard
+🔗 URL: https://leetcode.com/problems/maximum-number-of-points-from-grid-queries/
+
+📝 Description:
+   For each query, count reachable cells with values < query.
+"""
+
 import heapq
 
 class Solution(object):

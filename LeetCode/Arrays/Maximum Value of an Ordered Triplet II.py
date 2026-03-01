@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Maximum Value of an Ordered Triplet II
+📂 Category: Arrays
+🎯 Difficulty: Medium
+🔗 URL: https://leetcode.com/problems/maximum-value-of-an-ordered-triplet-ii/
+
+📝 Description:
+   Find max value of (nums[i]-nums[j])*nums[k] for i<j<k.
+"""
+
 class Solution(object):
     def maximumTripletValue(self, nums):
         """

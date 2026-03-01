@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Count the Number of Ideal Arrays
+📂 Category: Math-and-Counting
+🎯 Difficulty: Hard
+🔗 URL: https://leetcode.com/problems/count-the-number-of-ideal-arrays/
+
+📝 Description:
+   Count ideal arrays where each element divides the next.
+"""
+
 class Solution:
     def idealArrays(self, n: int, maxValue: int) -> int:
         @cache

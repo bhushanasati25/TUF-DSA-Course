@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Largest Color Value in a Directed Graph
+📂 Category: Graphs
+🎯 Difficulty: Hard
+🔗 URL: https://leetcode.com/problems/largest-color-value-in-a-directed-graph/
+
+📝 Description:
+   Find max frequency of any color on any path in a DAG.
+"""
+
 from collections import deque, defaultdict
 
 class Solution(object):

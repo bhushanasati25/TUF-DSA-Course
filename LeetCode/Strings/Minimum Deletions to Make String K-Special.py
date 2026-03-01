@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Minimum Deletions to Make String K-Special
+📂 Category: Strings
+🎯 Difficulty: Medium
+🔗 URL: https://leetcode.com/problems/minimum-deletions-to-make-string-k-special/
+
+📝 Description:
+   Min deletions so max and min char frequencies differ by ≤ k.
+"""
+
 class Solution(object):
     def minimumDeletions(self, word, k):
         """

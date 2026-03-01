@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Find the Original Typed String I
+📂 Category: Strings
+🎯 Difficulty: Easy
+🔗 URL: https://leetcode.com/problems/find-the-original-typed-string-i/
+
+📝 Description:
+   Count possible original strings before accidental key repeats.
+"""
+
 class Solution(object):
     def possibleStringCount(self, word):
         """

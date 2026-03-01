@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Partition Equal Subset Sum
+📂 Category: Dynamic-Programming
+🎯 Difficulty: Medium
+🔗 URL: https://leetcode.com/problems/partition-equal-subset-sum/
+
+📝 Description:
+   Check if array can be partitioned into two equal-sum subsets.
+"""
+
 class Solution(object):
     def canPartition(self, nums):
         """

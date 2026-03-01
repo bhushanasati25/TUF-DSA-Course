@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Length of Longest Fibonacci Subsequence
+📂 Category: Dynamic-Programming
+🎯 Difficulty: Medium
+🔗 URL: https://leetcode.com/problems/length-of-longest-fibonacci-subsequence/
+
+📝 Description:
+   Find longest subsequence that forms a Fibonacci-like sequence.
+"""
+
 class Solution(object):
     def lenLongestFibSubseq(self, arr):
         """

@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Count Symmetric Integers
+📂 Category: Math-and-Counting
+🎯 Difficulty: Easy
+🔗 URL: https://leetcode.com/problems/count-symmetric-integers/
+
+📝 Description:
+   Count integers where first half digit sum equals second half.
+"""
+
 class Solution(object):
     def countSymmetricIntegers(self, low, high):
         """

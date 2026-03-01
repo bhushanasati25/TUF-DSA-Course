@@ -1,3 +1,13 @@
+"""
+🔗 Problem: House Robber IV
+📂 Category: Binary-Search
+🎯 Difficulty: Medium
+🔗 URL: https://leetcode.com/problems/house-robber-iv/
+
+📝 Description:
+   Find minimum capability to rob at least k non-adjacent houses.
+"""
+
 class Solution(object):
     def minCapability(self, nums, k):
         """

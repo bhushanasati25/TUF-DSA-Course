@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Divide Array Into Arrays With Max Difference
+📂 Category: Arrays
+🎯 Difficulty: Medium
+🔗 URL: https://leetcode.com/problems/divide-array-into-arrays-with-max-difference/
+
+📝 Description:
+   Split array into groups of 3 with max element difference ≤ k.
+"""
+
 class Solution(object):
     def divideArray(self, nums, k):
         """

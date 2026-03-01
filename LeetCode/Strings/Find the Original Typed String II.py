@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Find the Original Typed String II
+📂 Category: Strings
+🎯 Difficulty: Hard
+🔗 URL: https://leetcode.com/problems/find-the-original-typed-string-ii/
+
+📝 Description:
+   Count original strings with length constraint before key repeats.
+"""
+
 class Solution(object):
     def possibleStringCount(self, word, k):
         """

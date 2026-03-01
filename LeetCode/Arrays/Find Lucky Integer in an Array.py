@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Find Lucky Integer in an Array
+📂 Category: Arrays
+🎯 Difficulty: Easy
+🔗 URL: https://leetcode.com/problems/find-lucky-integer-in-an-array/
+
+📝 Description:
+   Find the largest integer whose frequency equals its value.
+"""
+
 class Solution(object):
     def findLucky(self, arr):
         """

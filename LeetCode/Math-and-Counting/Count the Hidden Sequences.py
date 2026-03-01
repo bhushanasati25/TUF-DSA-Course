@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Count the Hidden Sequences
+📂 Category: Math-and-Counting
+🎯 Difficulty: Medium
+🔗 URL: https://leetcode.com/problems/count-the-hidden-sequences/
+
+📝 Description:
+   Count valid hidden sequences from differences within bounds.
+"""
+
 class Solution(object):
     def numberOfArrays(self, differences, lower, upper):
         """

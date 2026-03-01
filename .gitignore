@@ -1,0 +1,16 @@
+# Compiled binaries
+*.out
+*.exe
+*.o
+basics
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+
+# I/O test files
+input.txt
+output.txt

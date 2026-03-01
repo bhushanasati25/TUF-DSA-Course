@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Maximum Manhattan Distance After K Changes
+📂 Category: Greedy
+🎯 Difficulty: Medium
+🔗 URL: https://leetcode.com/problems/maximum-manhattan-distance-after-k-changes/
+
+📝 Description:
+   Max Manhattan distance from origin after k direction changes.
+"""
+
 class Solution(object):
     def maxDistance(self, s, k):
         """

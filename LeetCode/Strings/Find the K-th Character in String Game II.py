@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Find the K-th Character in String Game II
+📂 Category: Strings
+🎯 Difficulty: Hard
+🔗 URL: https://leetcode.com/problems/find-the-k-th-character-in-string-game-ii/
+
+📝 Description:
+   Find kth character with custom operations in string game.
+"""
+
 class Solution(object):
     def kthCharacter(self, k, operations):
         """

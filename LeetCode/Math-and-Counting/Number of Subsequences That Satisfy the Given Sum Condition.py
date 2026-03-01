@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Number of Subsequences That Satisfy the Given Sum Condition
+📂 Category: Math-and-Counting
+🎯 Difficulty: Medium
+🔗 URL: https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/
+
+📝 Description:
+   Count subsequences where min + max ≤ target.
+"""
+
 class Solution(object):
     def numSubseq(self, nums, target):
         """

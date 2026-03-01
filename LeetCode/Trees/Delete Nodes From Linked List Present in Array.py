@@ -1,0 +1,38 @@
+"""
+🔗 Problem: Delete Nodes From Linked List Present in Array
+📂 Category: Trees
+🎯 Difficulty: Medium
+🔗 URL: https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/
+
+📝 Description:
+   Delete linked list nodes whose values are in given array.
+"""
+
+# Definition for singly-linked list.
+# class ListNode(object):
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+
+class Solution(object):
+    def modifiedList(self, nums, head):
+        """
+        :type nums: List[int]
+        :type head: Optional[ListNode]
+        :rtype: Optional[ListNode]
+        """
+        to_delete = set(nums)
+        
+        dummy = ListNode(0)
+        dummy.next = head
+        
+        prev, curr = dummy, head
+        
+        while curr:
+            if curr.val in to_delete:
+                prev.next = curr.next
+            else:
+                prev = curr
+            curr = curr.next
+        
+        return dummy.next

@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Largest Divisible Subset
+📂 Category: Dynamic-Programming
+🎯 Difficulty: Medium
+🔗 URL: https://leetcode.com/problems/largest-divisible-subset/
+
+📝 Description:
+   Find largest subset where every pair is divisible.
+"""
+
 class Solution(object):
     def largestDivisibleSubset(self, nums):
         """

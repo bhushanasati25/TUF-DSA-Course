@@ -1,3 +1,13 @@
+"""
+🔗 Problem: Find Closest Node to Given Two Nodes
+📂 Category: Graphs
+🎯 Difficulty: Medium
+🔗 URL: https://leetcode.com/problems/find-closest-node-to-given-two-nodes/
+
+📝 Description:
+   Find node minimizing max distance from two given nodes.
+"""
+
 class Solution(object):
     def closestMeetingNode(self, edges, node1, node2):
         """
