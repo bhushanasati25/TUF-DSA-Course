@@ -1,3 +1,14 @@
+"""
+📝 Question:
+Given a positive integer n, check if it is an Armstrong number.
+An Armstrong number of d digits satisfies: sum of each digit raised
+to the power d equals the number itself.
+
+Example:
+  Input:  153
+  Output: True  (1³ + 5³ + 3³ = 1 + 125 + 27 = 153)
+"""
+
 # Check if a Number is Armstrong
 # Armstrong: sum of digits^(number of digits) == number
 

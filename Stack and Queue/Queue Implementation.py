@@ -1,3 +1,15 @@
+"""
+📝 Question:
+Implement a Queue data structure with the following operations:
+  1. enqueue(val) — Add element to rear
+  2. dequeue() — Remove and return front element
+  3. front() — Return front element without removing
+  4. is_empty() — Check if queue is empty
+  5. size() — Return number of elements
+
+Follow FIFO (First In, First Out) principle.
+"""
+
 # Queue Implementation using collections.deque
 # FIFO (First In First Out)
 # Operations: enqueue, dequeue, front, is_empty, size

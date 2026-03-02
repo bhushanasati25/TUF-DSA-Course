@@ -1,3 +1,14 @@
+"""
+📝 Question:
+Print an inverted alphabet triangle.
+
+For n = 4:
+  A B C D
+  A B C
+  A B
+  A
+"""
+
 # Pattern 15: Inverted Alphabet Triangle
 # A B C D E
 # A B C D

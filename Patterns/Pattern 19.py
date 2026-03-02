@@ -1,3 +1,17 @@
+"""
+📝 Question:
+Print a symmetric star pattern (hourglass sides).
+
+For n = 4:
+  ********
+  ***  ***
+  **    **
+  *      *
+  **    **
+  ***  ***
+  ********
+"""
+
 # Pattern 19: Symmetric Star Pattern (Hourglass sides)
 # **********
 # ****  ****

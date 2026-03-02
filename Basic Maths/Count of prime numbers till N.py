@@ -1,3 +1,13 @@
+"""
+📝 Question:
+Given a positive integer N, count how many prime numbers exist
+from 2 to N (inclusive).
+
+Example:
+  Input:  20
+  Output: 8  (primes: 2, 3, 5, 7, 11, 13, 17, 19)
+"""
+
 # Count of Prime Numbers up to N
 
 def is_prime(n):

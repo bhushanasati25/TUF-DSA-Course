@@ -1,3 +1,15 @@
+"""
+📝 Question:
+Print a reverse alphabet triangle.
+Each row starts from a decreasing letter up to the last letter.
+
+For n = 4 (last letter = D):
+  D
+  C D
+  B C D
+  A B C D
+"""
+
 # Pattern 18: Reverse Alphabet Triangle
 # E
 # D E

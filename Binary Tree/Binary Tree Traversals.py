@@ -1,3 +1,14 @@
+"""
+📝 Question:
+Implement a Binary Tree with the following operations:
+  1. Level-order insertion (builds complete binary tree)
+  2. Inorder traversal (Left → Root → Right)
+  3. Preorder traversal (Root → Left → Right)
+  4. Postorder traversal (Left → Right → Root)
+  5. Calculate the height of the tree
+  6. Count total number of nodes
+"""
+
 # Binary Tree - Basic Operations
 # Create, Insert, Inorder/Preorder/Postorder Traversal, Height, Count Nodes
 

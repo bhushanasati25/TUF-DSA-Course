@@ -1,3 +1,16 @@
+"""
+📝 Question:
+Implement the Selection Sort algorithm.
+Repeatedly find the minimum element from the unsorted portion
+and swap it with the first unsorted element.
+
+Time: O(n²) | Space: O(1) | Not Stable
+
+Example:
+  Input:  [64, 25, 12, 22, 11]
+  Output: [11, 12, 22, 25, 64]
+"""
+
 # Selection Sort Algorithm
 # Time: O(n^2) | Space: O(1)
 

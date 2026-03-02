@@ -1,3 +1,12 @@
+"""
+📝 Question:
+Given a string, reverse it using recursion (without slicing shortcuts).
+
+Example:
+  Input:  'hello'
+  Output: 'olleh'
+"""
+
 # Reverse a String (Recursive)
 
 def reverse_string(s):

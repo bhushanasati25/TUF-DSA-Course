@@ -1,3 +1,9 @@
+"""
+📝 Question:
+Write your first Python program.
+Create variables for name, age, and price, then print them.
+"""
+
 name = "Bhushan"
 age = 20
 price = 19.99

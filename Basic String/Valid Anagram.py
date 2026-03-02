@@ -1,3 +1,12 @@
+"""
+📝 Question:
+Given two strings s and t, return True if t is an anagram of s.
+
+Example:
+  Input:  s = 'anagram', t = 'nagaram'
+  Output: True
+"""
+
 # Valid Anagram Check
 
 def is_anagram(s, t):

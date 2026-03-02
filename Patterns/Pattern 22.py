@@ -1,3 +1,16 @@
+"""
+📝 Question:
+Print a concentric number square pattern.
+Each layer is filled with decreasing numbers from the outside in.
+
+For n = 3:
+  3 3 3 3 3
+  3 2 2 2 3
+  3 2 1 2 3
+  3 2 2 2 3
+  3 3 3 3 3
+"""
+
 # Pattern 22: Concentric Number Square
 # 5 5 5 5 5 5 5 5 5
 # 5 4 4 4 4 4 4 4 5

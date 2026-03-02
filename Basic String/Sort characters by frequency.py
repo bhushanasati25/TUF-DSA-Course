@@ -1,3 +1,13 @@
+"""
+📝 Question:
+Given a string, return the characters sorted by their frequency
+in descending order. Break ties alphabetically.
+
+Example:
+  Input:  'tree'
+  Output: ['e', 'r', 't']
+"""
+
 # Sort Characters by Frequency
 
 from collections import Counter

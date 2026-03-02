@@ -1,3 +1,13 @@
+"""
+📝 Question:
+Given a positive integer n, find and return all its divisors in
+ascending order.
+
+Example:
+  Input:  12
+  Output: [1, 2, 3, 4, 6, 12]
+"""
+
 # Find All Divisors of a Number
 
 def divisors(n):

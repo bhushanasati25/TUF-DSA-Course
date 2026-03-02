@@ -1,3 +1,16 @@
+"""
+📝 Question:
+Given an array of integers, find the next greater element for each element.
+The next greater element of an element x is the first element to its right
+that is greater than x. If no such element exists, output -1.
+
+Use a monotonic stack for O(n) time complexity.
+
+Example:
+  Input:  [4, 5, 2, 10, 8]
+  Output: [5, 10, 10, -1, -1]
+"""
+
 # Next Greater Element using Stack
 # For each element, find the next greater element to its right
 # Time: O(n) | Space: O(n)

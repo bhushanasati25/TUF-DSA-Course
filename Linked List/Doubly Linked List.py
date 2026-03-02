@@ -1,3 +1,13 @@
+"""
+📝 Question:
+Implement a Doubly Linked List with the following operations:
+  1. Insert at head
+  2. Insert at tail
+  3. Delete a node by value
+  4. Display forward (head → tail)
+  5. Display backward (tail → head)
+"""
+
 # Doubly Linked List - Basic Operations
 # Insert at head, tail | Delete | Display forward & backward
 

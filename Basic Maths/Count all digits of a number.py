@@ -1,3 +1,15 @@
+"""
+📝 Question:
+Given a non-negative integer n, count the total number of digits in it.
+
+Example:
+  Input:  12345
+  Output: 5
+
+  Input:  0
+  Output: 1
+"""
+
 # Count All Digits of a Number
 
 def count_digits(n):

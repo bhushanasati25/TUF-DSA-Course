@@ -1,3 +1,13 @@
+"""
+📝 Question:
+Given the root of a binary tree, return its level order traversal.
+Level order traversal visits nodes level by level from left to right (BFS).
+
+Example:
+  Input:  Tree [1, 2, 3, 4, 5, 6, 7]
+  Output: [[1], [2, 3], [4, 5, 6, 7]]
+"""
+
 # Level Order Traversal (BFS) of Binary Tree
 # Time: O(n) | Space: O(n)
 

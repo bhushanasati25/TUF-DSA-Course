@@ -1,3 +1,15 @@
+"""
+📝 Question:
+Print a hollow square pattern (border only).
+
+For n = 5:
+  *****
+  *   *
+  *   *
+  *   *
+  *****
+"""
+
 # Pattern 21: Hollow Square
 # *****
 # *   *

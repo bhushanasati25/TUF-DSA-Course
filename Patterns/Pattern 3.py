@@ -1,3 +1,14 @@
+"""
+📝 Question:
+Print a right-angled triangle with incrementing numbers per row.
+
+For n = 4:
+  1
+  1 2
+  1 2 3
+  1 2 3 4
+"""
+
 # Pattern 3: Right Triangle of Numbers
 # 1
 # 1 2

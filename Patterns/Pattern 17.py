@@ -1,3 +1,14 @@
+"""
+📝 Question:
+Print an alphabet pyramid (diamond letters centered).
+
+For n = 4:
+     A
+    ABA
+   ABCBA
+  ABCDCBA
+"""
+
 # Pattern 17: Alphabet Pyramid (Diamond letters)
 #     A
 #    ABA

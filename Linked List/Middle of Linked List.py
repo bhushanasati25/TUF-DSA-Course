@@ -1,3 +1,15 @@
+"""
+📝 Question:
+Given the head of a singly linked list, return the middle node.
+If there are two middle nodes, return the second one.
+
+Use the slow and fast pointer technique (O(n) time, O(1) space).
+
+Example:
+  Input:  1 → 2 → 3 → 4 → 5
+  Output: 3
+"""
+
 # Find the Middle of a Linked List
 # Using slow and fast pointer approach
 # Time: O(n) | Space: O(1)

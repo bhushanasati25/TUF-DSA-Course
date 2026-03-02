@@ -1,3 +1,14 @@
+"""
+📝 Question:
+Implement two binary tree algorithms:
+
+1. Symmetric Tree: Given a binary tree, check whether it is a mirror
+   of itself (symmetric around its center).
+
+2. Diameter: Find the diameter of a binary tree — the length of the
+   longest path between any two nodes (may or may not pass through root).
+"""
+
 # Symmetric Tree Check & Diameter of Binary Tree
 # Time: O(n) | Space: O(h)
 

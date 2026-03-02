@@ -1,3 +1,13 @@
+"""
+📝 Question:
+Given an array of integers, find the element that occurs the most number of times.
+If multiple elements have the same highest frequency, return the smallest one.
+
+Example:
+  Input:  [1, 3, 2, 1, 4, 1, 3, 3]
+  Output: 1 (frequency 3, but 1 < 3)
+"""
+
 # Highest Occurring Element in an Array
 
 from collections import Counter

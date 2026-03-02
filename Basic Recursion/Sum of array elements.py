@@ -1,3 +1,12 @@
+"""
+📝 Question:
+Given an array of integers, find the sum of all elements using recursion.
+
+Example:
+  Input:  [1, 2, 3, 4, 5]
+  Output: 15
+"""
+
 # Sum of Array Elements (Recursive)
 
 def array_sum(arr, index=0):

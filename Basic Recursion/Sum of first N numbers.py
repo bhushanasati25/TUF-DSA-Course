@@ -1,3 +1,13 @@
+"""
+📝 Question:
+Given a positive integer N, find the sum of all numbers from 1 to N
+using recursion.
+
+Example:
+  Input:  10
+  Output: 55  (1 + 2 + ... + 10)
+"""
+
 # Sum of First N Numbers (Recursive)
 
 def sum_n(n):

@@ -1,3 +1,13 @@
+"""
+📝 Question:
+Given a positive integer n, check if it is a perfect number.
+A perfect number is equal to the sum of its proper divisors (excluding itself).
+
+Example:
+  Input:  28
+  Output: True  (1 + 2 + 4 + 7 + 14 = 28)
+"""
+
 # Check if a Number is Perfect
 # A perfect number equals the sum of its proper divisors
 

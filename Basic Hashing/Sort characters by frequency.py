@@ -1,3 +1,14 @@
+"""
+📝 Question:
+Given a string, sort the characters by their frequency in descending order.
+If two characters have the same frequency, sort them alphabetically.
+Return the sorted list of characters.
+
+Example:
+  Input:  'tree'
+  Output: ['e', 'r', 't']  (e appears 2 times, r and t appear 1 time each)
+"""
+
 # Sort Characters by Frequency
 
 from collections import Counter

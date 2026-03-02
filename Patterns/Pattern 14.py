@@ -1,3 +1,14 @@
+"""
+📝 Question:
+Print an alphabet triangle starting from 'A'.
+
+For n = 4:
+  A
+  A B
+  A B C
+  A B C D
+"""
+
 # Pattern 14: Alphabet Triangle
 # A
 # A B

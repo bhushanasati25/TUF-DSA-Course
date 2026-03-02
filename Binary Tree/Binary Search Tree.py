@@ -1,3 +1,12 @@
+"""
+📝 Question:
+Implement a Binary Search Tree (BST) with the following operations:
+  1. Insert a value (maintain BST property: left < root < right)
+  2. Search for a value
+  3. Delete a node (handle all 3 cases: leaf, one child, two children)
+  4. Inorder traversal (gives sorted output for BST)
+"""
+
 # Binary Search Tree (BST) - Insert, Search, Delete
 # BST Property: left < root < right
 

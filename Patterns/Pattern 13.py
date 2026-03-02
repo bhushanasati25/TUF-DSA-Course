@@ -1,3 +1,14 @@
+"""
+📝 Question:
+Print a triangle with incrementing numbers across rows.
+
+For n = 4:
+  1
+  2 3
+  4 5 6
+  7 8 9 10
+"""
+
 # Pattern 13: Incrementing Number Triangle
 # 1
 # 2 3

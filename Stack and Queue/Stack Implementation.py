@@ -1,3 +1,15 @@
+"""
+📝 Question:
+Implement a Stack data structure with the following operations:
+  1. push(val) — Add element to top
+  2. pop() — Remove and return top element
+  3. top() — Return top element without removing
+  4. is_empty() — Check if stack is empty
+  5. size() — Return number of elements
+
+Follow LIFO (Last In, First Out) principle.
+"""
+
 # Stack Implementation using List
 # LIFO (Last In First Out)
 # Operations: push, pop, top, is_empty, size

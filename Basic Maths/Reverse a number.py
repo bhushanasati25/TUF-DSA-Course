@@ -1,3 +1,12 @@
+"""
+📝 Question:
+Given an integer n, reverse its digits and return the result.
+
+Example:
+  Input:  12345
+  Output: 54321
+"""
+
 # Reverse a Number
 
 def reverse_number(n):

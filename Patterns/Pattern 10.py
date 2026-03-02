@@ -1,3 +1,17 @@
+"""
+📝 Question:
+Print an arrow pattern (right triangle + inverted right triangle).
+
+For n = 4:
+  *
+  **
+  ***
+  ****
+  ***
+  **
+  *
+"""
+
 # Pattern 10: Arrow (Triangle + Inverted Triangle)
 
 def pattern10(n):

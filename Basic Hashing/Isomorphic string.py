@@ -1,3 +1,14 @@
+"""
+📝 Question:
+Given two strings s and t, determine if they are isomorphic.
+Two strings are isomorphic if each character in s can be replaced to get t,
+with a consistent one-to-one mapping (no two characters map to the same character).
+
+Example:
+  Input:  s = 'egg', t = 'add'
+  Output: True  (e→a, g→d)
+"""
+
 # Check if Two Strings are Isomorphic
 
 def is_isomorphic(s, t):

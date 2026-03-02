@@ -1,3 +1,13 @@
+"""
+📝 Question:
+Given an array of strings, find the longest common prefix string
+amongst them. If there is no common prefix, return an empty string.
+
+Example:
+  Input:  ['flower', 'flow', 'flight']
+  Output: 'fl'
+"""
+
 # Longest Common Prefix
 
 def longest_common_prefix(strs):

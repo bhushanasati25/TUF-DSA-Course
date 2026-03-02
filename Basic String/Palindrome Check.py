@@ -1,3 +1,13 @@
+"""
+📝 Question:
+Given a string s, check if it is a palindrome.
+A palindrome reads the same forwards and backwards.
+
+Example:
+  Input:  'racecar'
+  Output: True
+"""
+
 # Check if a String is Palindrome
 
 def is_palindrome(s):

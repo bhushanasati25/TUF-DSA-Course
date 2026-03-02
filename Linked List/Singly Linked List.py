@@ -1,3 +1,14 @@
+"""
+📝 Question:
+Implement a Singly Linked List with the following operations:
+  1. Insert at head
+  2. Insert at tail
+  3. Delete a node by value
+  4. Reverse the list
+  5. Find the length
+  6. Display the list
+"""
+
 # Singly Linked List - Basic Operations
 # Insert at head, tail | Delete | Display | Reverse | Length
 

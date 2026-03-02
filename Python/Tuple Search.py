@@ -1,3 +1,8 @@
+"""
+📝 Question:
+Given a tuple of numbers, search for a specific value and print its index.
+"""
+
 nu = (1,4,9,16,25,26,49,64,81,100)
 
 x =64

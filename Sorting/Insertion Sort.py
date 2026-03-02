@@ -1,3 +1,16 @@
+"""
+📝 Question:
+Implement the Insertion Sort algorithm.
+Build the sorted array one element at a time by inserting each
+element into its correct position among the already-sorted elements.
+
+Time: O(n²) | Space: O(1) | Stable
+
+Example:
+  Input:  [64, 34, 25, 12, 22, 11, 90]
+  Output: [11, 12, 22, 25, 34, 64, 90]
+"""
+
 # Insertion Sort Algorithm
 # Time Complexity: O(n^2) | Space Complexity: O(1)
 # Best for small or nearly sorted arrays

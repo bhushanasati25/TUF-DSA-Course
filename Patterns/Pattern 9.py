@@ -1,3 +1,17 @@
+"""
+📝 Question:
+Print a diamond shape made of stars (pyramid + inverted pyramid).
+
+For n = 4:
+     *
+    ***
+   *****
+  *******
+   *****
+    ***
+     *
+"""
+
 # Pattern 9: Diamond of Stars (Pyramid + Inverted)
 
 def pattern9(n):

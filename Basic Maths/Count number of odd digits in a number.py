@@ -1,3 +1,12 @@
+"""
+📝 Question:
+Given a positive integer n, count how many of its digits are odd.
+
+Example:
+  Input:  12345
+  Output: 3  (digits 1, 3, 5 are odd)
+"""
+
 # Count Number of Odd Digits in a Number
 
 def count_odd_digits(n):

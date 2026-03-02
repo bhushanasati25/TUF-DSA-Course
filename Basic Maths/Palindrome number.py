@@ -1,3 +1,16 @@
+"""
+📝 Question:
+Given an integer n, determine if it is a palindrome.
+A palindrome number reads the same forwards and backwards.
+
+Example:
+  Input:  121
+  Output: True
+
+  Input:  123
+  Output: False
+"""
+
 # Check if a Number is Palindrome
 
 def is_palindrome(n):

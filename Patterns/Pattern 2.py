@@ -1,3 +1,14 @@
+"""
+📝 Question:
+Print a right-angled triangle of stars.
+
+For n = 4:
+  *
+  * *
+  * * *
+  * * * *
+"""
+
 # Pattern 2: Right Triangle of Stars
 # *
 # * *

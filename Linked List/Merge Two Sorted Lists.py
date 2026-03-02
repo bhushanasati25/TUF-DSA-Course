@@ -1,3 +1,13 @@
+"""
+📝 Question:
+Given the heads of two sorted linked lists, merge them into one sorted list.
+The merged list should be made by splicing together the nodes of the two lists.
+
+Example:
+  Input:  1 → 3 → 5, 2 → 4 → 6
+  Output: 1 → 2 → 3 → 4 → 5 → 6
+"""
+
 # Merge Two Sorted Linked Lists
 # Time: O(n + m) | Space: O(1)
 

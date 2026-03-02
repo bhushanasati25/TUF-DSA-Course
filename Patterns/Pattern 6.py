@@ -1,3 +1,14 @@
+"""
+📝 Question:
+Print an inverted right-angled triangle with incrementing numbers.
+
+For n = 4:
+  1 2 3 4
+  1 2 3
+  1 2
+  1
+"""
+
 # Pattern 6: Inverted Right Triangle of Numbers
 # 1 2 3 4 5
 # 1 2 3 4

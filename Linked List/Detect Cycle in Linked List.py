@@ -1,3 +1,12 @@
+"""
+📝 Question:
+Given the head of a linked list, determine if the linked list has a cycle.
+A cycle exists if some node can be reached again by continuously following
+the next pointer. Also find the starting node of the cycle if one exists.
+
+Use Floyd's Tortoise and Hare algorithm (O(1) space).
+"""
+
 # Detect Cycle in a Linked List (Floyd's Tortoise and Hare)
 # Time: O(n) | Space: O(1)
 

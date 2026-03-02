@@ -1,3 +1,14 @@
+"""
+📝 Question:
+Print a square pattern of stars (n × n).
+
+For n = 4:
+  * * * *
+  * * * *
+  * * * *
+  * * * *
+"""
+
 # Pattern 1: Square of Stars
 # * * * *
 # * * * *

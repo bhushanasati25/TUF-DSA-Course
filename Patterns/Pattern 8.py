@@ -1,3 +1,14 @@
+"""
+📝 Question:
+Print an inverted centered pyramid of stars.
+
+For n = 4:
+  *******
+   *****
+    ***
+     *
+"""
+
 # Pattern 8: Inverted Pyramid of Stars
 # *********
 #  *******

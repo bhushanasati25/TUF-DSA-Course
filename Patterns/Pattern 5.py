@@ -1,3 +1,14 @@
+"""
+📝 Question:
+Print an inverted right-angled triangle of stars.
+
+For n = 4:
+  * * * *
+  * * *
+  * *
+  *
+"""
+
 # Pattern 5: Inverted Right Triangle of Stars
 # * * * * *
 # * * * *

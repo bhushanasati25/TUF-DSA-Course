@@ -1,3 +1,16 @@
+"""
+📝 Question:
+Implement the Bubble Sort algorithm.
+Repeatedly swap adjacent elements if they are in the wrong order.
+Optimize with an early break if no swaps occur in a pass.
+
+Time: O(n²) | Space: O(1) | Stable
+
+Example:
+  Input:  [64, 34, 25, 12, 22, 11, 90]
+  Output: [11, 12, 22, 25, 34, 64, 90]
+"""
+
 # Bubble Sort Algorithm
 # Time: O(n^2) | Space: O(1) | Optimized with early break
 

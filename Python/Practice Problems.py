@@ -1,3 +1,13 @@
+"""
+📝 Question:
+A collection of Python practice problems covering:
+  - Finding the largest of three numbers
+  - Checking even/odd
+  - Basic arithmetic operations
+  - Loop-based exercises
+  - Function definitions
+"""
+
 def number(num1, num2, num3):
     if (num1 > num2):
         return num1

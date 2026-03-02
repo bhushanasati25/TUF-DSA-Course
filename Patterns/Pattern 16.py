@@ -1,3 +1,14 @@
+"""
+📝 Question:
+Print a triangle where each row repeats its corresponding letter.
+
+For n = 4:
+  A
+  B B
+  C C C
+  D D D D
+"""
+
 # Pattern 16: Same Letter Triangle
 # A
 # B B

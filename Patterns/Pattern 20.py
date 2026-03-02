@@ -1,3 +1,17 @@
+"""
+📝 Question:
+Print a butterfly pattern.
+
+For n = 4:
+  *      *
+  **    **
+  ***  ***
+  ********
+  ***  ***
+  **    **
+  *      *
+"""
+
 # Pattern 20: Butterfly Pattern
 # *        *
 # **      **

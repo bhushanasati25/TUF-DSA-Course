@@ -1,3 +1,12 @@
+"""
+📝 Question:
+Given a non-negative integer n, compute n! (factorial) using recursion.
+
+Example:
+  Input:  5
+  Output: 120  (5 × 4 × 3 × 2 × 1)
+"""
+
 # Factorial of a Given Number (Recursive)
 
 def factorial(n):

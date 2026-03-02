@@ -1,3 +1,14 @@
+"""
+📝 Question:
+Print a centered pyramid of stars.
+
+For n = 4:
+     *
+    ***
+   *****
+  *******
+"""
+
 # Pattern 7: Pyramid of Stars
 #     *
 #    ***

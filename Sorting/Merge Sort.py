@@ -1,3 +1,16 @@
+"""
+📝 Question:
+Implement the Merge Sort algorithm using divide and conquer.
+Recursively split the array in half, sort each half, then merge
+them back in sorted order.
+
+Time: O(n log n) | Space: O(n) | Stable
+
+Example:
+  Input:  [38, 27, 43, 3, 9, 82, 10]
+  Output: [3, 9, 10, 27, 38, 43, 82]
+"""
+
 # Merge Sort Algorithm
 # Time Complexity: O(n log n) | Space Complexity: O(n)
 # Stable sort, good for large datasets

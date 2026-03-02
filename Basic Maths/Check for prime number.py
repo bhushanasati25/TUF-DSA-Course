@@ -1,3 +1,16 @@
+"""
+📝 Question:
+Given a positive integer n, determine if it is a prime number.
+A prime number has exactly two factors: 1 and itself.
+
+Example:
+  Input:  7
+  Output: True
+
+  Input:  10
+  Output: False
+"""
+
 # Check if a Number is Prime
 
 def is_prime(n):

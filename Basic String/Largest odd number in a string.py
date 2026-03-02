@@ -1,3 +1,14 @@
+"""
+📝 Question:
+Given a string num representing a large integer, return the largest-valued
+odd integer that is a non-empty substring of num. If no odd integer exists,
+return an empty string.
+
+Example:
+  Input:  '52'
+  Output: '5'
+"""
+
 # Largest Odd Number in String
 
 def largest_odd_num(s):

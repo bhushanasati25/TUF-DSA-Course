@@ -1,3 +1,12 @@
+"""
+📝 Question:
+Given a string, reverse its characters and return the result.
+
+Example:
+  Input:  'hello'
+  Output: 'olleh'
+"""
+
 # Reverse a String
 
 def reverse_string(s):

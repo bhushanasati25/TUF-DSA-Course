@@ -1,3 +1,13 @@
+"""
+📝 Question:
+Given a positive integer n, determine if it is a prime number
+using a recursive approach.
+
+Example:
+  Input:  13
+  Output: True
+"""
+
 # Check if a Number is Prime (Recursive)
 
 import math

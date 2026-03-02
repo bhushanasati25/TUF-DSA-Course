@@ -1,3 +1,14 @@
+"""
+📝 Question:
+Print a number mirror pattern.
+
+For n = 4:
+  1      1
+  12    21
+  123  321
+  12344321
+"""
+
 # Pattern 12: Number Mirror
 # 1        1
 # 12      21
